@@ -46,11 +46,18 @@ tw-story[tags~="livingroom"]
 (click: ?button)[==머릿속으로 열심히 떠올려보지만, 좀처럼 상상하기가 힘들다. [...]&lt;button|
 (click: ?button)[==얼마나 크지? 남산타워만 하려나? 사진처럼 반짝반짝 빛날까? 그래도 철로 만들었다는데, 좀 녹슬지 않았을까? [...]&lt;button|
 (click: ?button)[==나 : [[“… 에휴. 다 무슨 소용이냐”-&gt;S#1.1]]
-]</tw-passagedata><tw-passagedata pid="4" name="S#1.1" tags="" position="413,654" size="100,100">(box:&quot;=XxxxXxxxXxxxX=&quot;, 3)
+]</tw-passagedata><tw-passagedata pid="4" name="S#1.1" tags="" position="413,654" size="100,100">&lt;script&gt;
+	var audio = document.createElement(&#39;audio&#39;);
+	audio.src = &#39;./resource/main.mp3&#39;;
+	audio.loop = true;
+	audio.play();
+&lt;/script&gt;
+
+(box:&quot;=XxxxXxxxXxxxX=&quot;, 3)
 [나에게도 버킷리스트가 있다. 유럽 여행같은 것보다 더 절박한.[...]&lt;button|
 (click: ?button)[==그걸 이루기 위해 나는 세계 각지가 아닌 알바처들을 전전하고 있다. [...]&lt;button| 
-(click: ?button)[==나: &quot;힘들다... [[빨리 들어가서-&gt;S#2]] 씻고 쉬어야지&quot;]</tw-passagedata><tw-passagedata pid="5" name="S#2" tags="livingroom" position="414,806" size="100,100">(box:&quot;=XxxxXxxxXxxxX=&quot;, 3)
-[문을 열고 거실로 들어서니, 익숙한 풍경이 펼쳐진다. 에펠탑과 같은 탑이지만, 흉물스럽기 짝이 없는 종교 상징물. [...]&lt;button|
+(click: ?button)[==나: &quot;힘들다... [[빨리 들어가서-&gt;S#2]] 씻고 쉬어야지&quot;]</tw-passagedata><tw-passagedata pid="5" name="S#2" tags="livingroom" position="414,805" size="100,100">(box:&quot;=XxxxXxxxXxxxX=&quot;, 3)
+(bg:white)[문을 열고 거실로 들어서니, 익숙한 풍경이 펼쳐진다. 에펠탑과 같은 탑이지만, 흉물스럽기 짝이 없는 종교 상징물. [...]&lt;button|
 (click: ?button)[==그리고 나의 [버킷리스트 1번,]&lt;1|
 (click: ?1)[==엄마: &quot;너는 애가 [왜 이렇게 늦게 다니니?]&lt;2| 잠깐 앉아봐. 엄마랑 얘기 좀 하자&quot;
 (click: ?2)[==나: &quot;왜 늦게 다니긴. [돈 벌어야 하니까]&lt;3| 그러지.&quot;
@@ -69,7 +76,11 @@ tw-story[tags~="livingroom"]
 
 [[무시하고 방으로 들어간다.-&gt;S#3.1]]
 [[속는 셈 치고 엄마 앞에 앉는다. -&gt; S#3.2]]
-]</tw-passagedata><tw-passagedata pid="6" name="S#3.1" tags="" position="339,956" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="7" name=" S#3.2" tags="" position="489,956" size="100,100">Double-click this passage to edit it.</tw-passagedata></tw-storydata>
+]</tw-passagedata><tw-passagedata pid="6" name="S#3.1" tags="livingroom" position="339,956" size="100,100">(box:&quot;=XxxxXxxxXxxxX=&quot;, 3)
+(bg:white)[[나 : “됐어. 보나마나 또 이상한 얘기겠지.&quot; [...]&lt;button|
+(click: ?button)[==나 : “나 피곤해. 먼저 잘게.” [...]&lt;button|
+(click: ?button)[==엄마 : “딸! 잠깐이면 돼! 이번이[…]&lt;button|”
+(click: ?button)[==(쾅)]]</tw-passagedata><tw-passagedata pid="7" name=" S#3.2" tags="" position="489,956" size="100,100">Double-click this passage to edit it.</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">"use strict";var _slicedToArray=function(){return function(e,t){if(Array.isArray(e))return e;if(Symbol.iterator in Object(e))return function(e,t){var n=[],r=!0,a=!1,i=void 0;try{for(var o,s=e[Symbol.iterator]();!(r=(o=s.next()).done)&&(n.push(o.value),!t||n.length!==t);r=!0);}catch(e){a=!0,i=e}finally{try{!r&&s.return&&s.return()}finally{if(a)throw i}}return n}(e,t);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}!function(){
 /**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
