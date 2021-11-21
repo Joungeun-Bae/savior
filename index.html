@@ -52,7 +52,9 @@ tw-story[tags~="S#2"]
    				element.mozRequestFullScreen();
  			} else if(element.webkitRequestFullScreen) {
      			element.webkitRequestFullScreen();
-  			}
+  			} else if(element.msRequestFullscreen) {
+					element.msRequestFullscreen();
+				}
 			}
 
 		launchFullScreen(document.documentElement);
