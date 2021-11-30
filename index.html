@@ -28,6 +28,13 @@ tw-sidebar
 	display: none;
 }
 
+tw-story[tags~="S#1"] 
+{
+	background-image: url("./resource/s1_instagram.png");
+  	background-size: cover;
+  	background-position: center center;
+}
+
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">if (typeof window.makeitbig == "undefined") {
 	window.makeitbig = {
 		myEventHandler: function() {
@@ -51,7 +58,14 @@ tw-sidebar
 
 &lt;input type=&quot;button&quot; value=&quot;이 버튼을 눌러 전체화면 모드로 감상해 주세요&quot; onclick=&quot;makeitbig.myEventHandler();&quot;&gt;
 
-(click: ?page)[(goto:&#39;1&#39;)]</tw-passagedata><tw-passagedata pid="2" name="1" tags="S#1" position="535,198" size="100,100">(set: $pagename to (str:(passage:)&#39;s name))
+(click: ?page)[(goto:&#39;1&#39;)]</tw-passagedata><tw-passagedata pid="2" name="1" tags="S#1" position="535,198" size="100,100">&lt;script&gt;
+	var audio = document.createElement(&#39;audio&#39;);
+	audio.src = &#39;./resource/main.mp3&#39;;
+	audio.loop = true;
+	audio.play();
+&lt;/script&gt;
+
+(set: $pagename to (str:(passage:)&#39;s name))
 (set: $pagenumber to (num: $pagename))
 (set: $nextpage to $pagenumber+1)
 
@@ -71,7 +85,7 @@ tw-sidebar
 
 (float-box: &quot;=XXX=&quot;,&quot;====Y=&quot;)+(bg:white)+(b4r:&quot;solid&quot;)+(b4r-colour:black)[얼마나 크지? 남산타워만 하려나? 사진처럼 반짝반짝 빛날까? 그래도 철로 만들었다는데, 좀 녹슬지 않았을까?
 (click: ?page)[==(text-style:&quot;bold&quot;)[나 : “… 에휴. 다 무슨 소용이냐”] 
-(click: ?page)[(goto:(str:$nextpage))]]</tw-passagedata><tw-passagedata pid="5" name="4" tags="S#2" position="910,194" size="100,100">(set: $pagename to (str:(passage:)&#39;s name))
+(click: ?page)[(goto:(str:$nextpage))]]</tw-passagedata><tw-passagedata pid="5" name="4" tags="S#2" position="909,194" size="100,100">(set: $pagename to (str:(passage:)&#39;s name))
 (set: $pagenumber to (num: $pagename))
 (set: $nextpage to $pagenumber+1)
 
@@ -400,12 +414,12 @@ tw-sidebar
 (float-box: &quot;=XXX=&quot;,&quot;====Y=&quot;)+(bg:white)+(b4r:&quot;solid&quot;)+(b4r-colour:black)[&#39;&#39;나 : &quot;... 나 참. 이상한 꿈 때문에 별 걸 다 보네.&quot;  &#39;&#39;
 (click: ?page)[==엄마의 서랍 안에는 온갖 물건들이 널브러져 있었다. 각종 종교 성물들, 교인 명단으로 보이는 종이, 교리 책, 그리고...
 (click: ?page)[==&#39;&#39;나 : &quot;아, 찾았다!&quot;&#39;&#39;
-(click: ?page)[(goto:(str:$nextpage))]]</tw-passagedata><tw-passagedata pid="53" name="51" tags="S#9" position="1041,1428" size="100,100">(set: $pagename to (str:(passage:)&#39;s name))
+(click: ?page)[(goto:(str:$nextpage))]]</tw-passagedata><tw-passagedata pid="53" name="51" tags="S#9" position="1041,1427" size="100,100">(set: $pagename to (str:(passage:)&#39;s name))
 (set: $pagenumber to (num: $pagename))
 (set: $nextpage to $pagenumber+1)
 
 (float-box: &quot;=XXX=&quot;,&quot;====Y=&quot;)+(bg:white)+(b4r:&quot;solid&quot;)+(b4r-colour:black)[통장이 있었다. 바로 꺼내서 가장 최근 이체 내역을 확인해보았다. 
-(click: ?page)[==... 300만원이다. 그리고 그 옆에는 교주의 이름이 선명하게 찍혀있었다.
+(click: ?page)[==... 300만원이다. 그리고 그 옆에는 교주의 이름이 선명하게 찍혀있었다. 
 (click: ?page)[==&#39;&#39;나 : &quot;세상에... 꿈이 사실이었어...?&quot;&#39;&#39;
 (click: ?page)[(goto:(str:$nextpage))]]</tw-passagedata><tw-passagedata pid="54" name="52" tags="S#9" position="1161,1428" size="100,100">(set: $pagename to (str:(passage:)&#39;s name))
 (set: $pagenumber to (num: $pagename))
@@ -481,111 +495,111 @@ tw-sidebar
 (click: ?page)[==매일같이 엄마가 하는 종교 얘기를 귓등으로 듣는 것도, 어차피 소용없을 거라 생각한다. 
 (click: ?page)[==저 흉물스러운 조각상과 역겨운 교주의 사진을 그대로 놔두는 것도 더 이상은 견딜 수 없다. 
 (text-style:&quot;rumble&quot;)[(쾅)]
-(click: ?page)[(goto:(str:$nextpage))]]</tw-passagedata><tw-passagedata pid="65" name="101" tags="S#A2" position="906.5,1856.5" size="100,100">(set: $pagename to (str:(passage:)&#39;s name))
+(click: ?page)[(goto:(str:$nextpage))]]</tw-passagedata><tw-passagedata pid="65" name="101" tags="S#A2" position="906,1856" size="100,100">(set: $pagename to (str:(passage:)&#39;s name))
 (set: $pagenumber to (num: $pagename))
 (set: $nextpage to $pagenumber+1)
 
 (float-box: &quot;=XXX=&quot;,&quot;====Y=&quot;)+(bg:white)+(b4r:&quot;solid&quot;)+(b4r-colour:black)[문을 박차고 들어가자, 엄마는 황급히 핸드폰을 뒤로 숨기며 당황한 표정으로 나를 바라보았다. 
 (click: ?page)[==(text-style:&quot;shudder&quot;)[&#39;&#39;엄마 : &quot;아... 따... 딸! 언제부터 거기...&quot; &#39;&#39;]
 (click: ?page)[==엄마의 말이 채 다 끝나기도 전에 나는 엄마를 지나쳐 조각상들을 전부 넘어뜨렸다. 
-(click: ?page)[(goto:(str:$nextpage))]]</tw-passagedata><tw-passagedata pid="66" name="102" tags="S#A2" position="1026.5,1856.5" size="100,100">(set: $pagename to (str:(passage:)&#39;s name))
+(click: ?page)[(goto:(str:$nextpage))]]</tw-passagedata><tw-passagedata pid="66" name="102" tags="S#A2" position="1026,1856" size="100,100">(set: $pagename to (str:(passage:)&#39;s name))
 (set: $pagenumber to (num: $pagename))
 (set: $nextpage to $pagenumber+1)
 
 (float-box: &quot;=XXX=&quot;,&quot;====Y=&quot;)+(bg:white)+(b4r:&quot;solid&quot;)+(b4r-colour:black)[&#39;&#39;엄마 : &quot;딸! 지금 뭐하는...!&quot;&#39;&#39;
 (click: ?page)[==흥분한 나는 대꾸도 없이 벽에 걸린 교주 액자를 손에 들었다. 
 (click: ?page)[==그리고는 온 힘을 다해 바닥에 내던졌다. 
-(click: ?page)[(goto:(str:$nextpage))]]</tw-passagedata><tw-passagedata pid="67" name="103" tags="S#A2" position="1146.5,1857.5" size="100,100">(set: $pagename to (str:(passage:)&#39;s name))
+(click: ?page)[(goto:(str:$nextpage))]]</tw-passagedata><tw-passagedata pid="67" name="103" tags="S#A2" position="1146,1857" size="100,100">(set: $pagename to (str:(passage:)&#39;s name))
 (set: $pagenumber to (num: $pagename))
 (set: $nextpage to $pagenumber+1)
 
 (float-box: &quot;=XXX=&quot;,&quot;====Y=&quot;)+(bg:white)+(b4r:&quot;solid&quot;)+(b4r-colour:black)[(text-style:&quot;rumble&quot;)[(쨍그랑)]
 (click: ?page)[==엄마 : &quot;안돼!!!&quot;
 (click: ?page)[==유리 조각들이 흩어진 위로 교주의 사진은 엎어졌다. 다른 한 쪽에서는 부서진 조각상들이 나뒹굴고 있었다. 
-(click: ?page)[(goto:(str:$nextpage))]]</tw-passagedata><tw-passagedata pid="68" name="104" tags="S#A2" position="1266.5,1856.5" size="100,100">(set: $pagename to (str:(passage:)&#39;s name))
+(click: ?page)[(goto:(str:$nextpage))]]</tw-passagedata><tw-passagedata pid="68" name="104" tags="S#A2" position="1266,1856" size="100,100">(set: $pagename to (str:(passage:)&#39;s name))
 (set: $pagenumber to (num: $pagename))
 (set: $nextpage to $pagenumber+1)
 
 (float-box: &quot;=XXX=&quot;,&quot;====Y=&quot;)+(bg:white)+(b4r:&quot;solid&quot;)+(b4r-colour:black)[한바탕 하고 나니  숨이 거칠어졌다. 
 (click: ?page)[==&#39;&#39;엄마 : &quot;너 지금 무슨 짓을 하는 거...&quot;&#39;&#39;
 &#39;&#39;나 : &quot;엄마야말로 무슨 짓을 한 건지 알고나 있어?&quot; &#39;&#39;
-(click: ?page)[(goto:(str:$nextpage))]]</tw-passagedata><tw-passagedata pid="69" name="105" tags="S#A2" position="1385.5,1856.5" size="100,100">(set: $pagename to (str:(passage:)&#39;s name))
+(click: ?page)[(goto:(str:$nextpage))]]</tw-passagedata><tw-passagedata pid="69" name="105" tags="S#A2" position="1385,1856" size="100,100">(set: $pagename to (str:(passage:)&#39;s name))
 (set: $pagenumber to (num: $pagename))
 (set: $nextpage to $pagenumber+1)
 
 (float-box: &quot;=XXX=&quot;,&quot;====Y=&quot;)+(bg:white)+(b4r:&quot;solid&quot;)+(b4r-colour:black)[나는 언성을 높여 말했다. 엄마는 무언가를 말하려다, 아까의 통화를 기억해내자 입을 다물었다. 
 (click: ?page)[==(text-style:&quot;shudder&quot;)[&#39;&#39;나 : &quot;내 알바비였어! 무려 두 달 치. 빚 갚을 돈이었고.&quot;&#39;&#39;]
 (click: ?page)[==&#39;&#39;엄마 : &quot;딸, 속인건 미안해. 하지만 그건...&quot; &#39;&#39;
-(click: ?page)[(goto:(str:$nextpage))]]</tw-passagedata><tw-passagedata pid="70" name="106" tags="S#A2" position="1507.5,1856.5" size="100,100">(set: $pagename to (str:(passage:)&#39;s name))
+(click: ?page)[(goto:(str:$nextpage))]]</tw-passagedata><tw-passagedata pid="70" name="106" tags="S#A2" position="1507,1856" size="100,100">(set: $pagename to (str:(passage:)&#39;s name))
 (set: $pagenumber to (num: $pagename))
 (set: $nextpage to $pagenumber+1)
 
 (float-box: &quot;=XXX=&quot;,&quot;====Y=&quot;)+(bg:white)+(b4r:&quot;solid&quot;)+(b4r-colour:black)[엄마 쪽은 쳐다보지도 않은 채 방을 나섰다. 그리고 조용히 짐을 챙겨서 현관문으로 향했다. 
 (click: ?page)[==&#39;&#39;엄마 : &quot;어디 가! 와서 얘기 좀...&quot; &#39;&#39;
 현관문을 열고 나서는 뒤로 엄마가 무어라 외치는 소리가 들렸다. 
-(click: ?page)[(goto:(str:$nextpage))]]</tw-passagedata><tw-passagedata pid="71" name="107" tags="S#A2" position="1627.5,1856.5" size="100,100">(set: $pagename to (str:(passage:)&#39;s name))
+(click: ?page)[(goto:(str:$nextpage))]]</tw-passagedata><tw-passagedata pid="71" name="107" tags="S#A2" position="1627,1856" size="100,100">(set: $pagename to (str:(passage:)&#39;s name))
 (set: $pagenumber to (num: $pagename))
 (set: $nextpage to $pagenumber+1)
 
 (float-box: &quot;=XXX=&quot;,&quot;====Y=&quot;)+(bg:white)+(b4r:&quot;solid&quot;)+(b4r-colour:black)[&#39;&#39;나 : &quot;아니. 더는 듣기 싫어.&quot; &#39;&#39;
 (click: ?page)[==하지만 지금은 듣고 싶지 않았다. 얘기를 듣는다고 300만원이 돌아오는 것도 아니니까. 
-(click: ?page)[(goto:(str:$nextpage))]]</tw-passagedata><tw-passagedata pid="72" name="108" tags="S#A3" position="748.5,2014.5" size="100,100">(set: $pagename to (str:(passage:)&#39;s name))
+(click: ?page)[(goto:(str:$nextpage))]]</tw-passagedata><tw-passagedata pid="72" name="108" tags="S#A3" position="748,2014" size="100,100">(set: $pagename to (str:(passage:)&#39;s name))
 (set: $pagenumber to (num: $pagename))
 (set: $nextpage to $pagenumber+1)
 
 (float-box: &quot;=XXX=&quot;,&quot;====Y=&quot;)+(bg:white)+(b4r:&quot;solid&quot;)+(b4r-colour:black)[&#39;&#39;나 : &quot;도대체 엄마가 언제 저 지경까지 된거지...?&quot;&#39;&#39;
 (click: ?page)[==알바를 하면서도 일에 집중할 수가 없었다. 아까의 일이 계속해서 머리 속에 맴돌았다. 
 (click: ?page)[==엄마가 사이비 종교에 심취했다는 것까진 알았어도, 내 돈을 훔쳐갈 정도일 줄은 몰랐다. 
-(click: ?page)[(goto:(str:$nextpage))]]</tw-passagedata><tw-passagedata pid="73" name="109" tags="S#A3" position="868.5,2014.5" size="100,100">(set: $pagename to (str:(passage:)&#39;s name))
+(click: ?page)[(goto:(str:$nextpage))]]</tw-passagedata><tw-passagedata pid="73" name="109" tags="S#A3" position="868,2014" size="100,100">(set: $pagename to (str:(passage:)&#39;s name))
 (set: $pagenumber to (num: $pagename))
 (set: $nextpage to $pagenumber+1)
 
 (float-box: &quot;=XXX=&quot;,&quot;====Y=&quot;)+(bg:white)+(b4r:&quot;solid&quot;)+(b4r-colour:black)[&#39;&#39;나 : &quot;혹시... 여태껏 빚 갚으라고 보낸 돈들도 전부 헌금으로 갖다 바친거 아냐?&quot; &#39;&#39;
 (click: ?page)[==&#39;&#39;나 : &quot;설마 생활비로 준 돈도 다 헌금으로 썼나?&quot;&#39;&#39;
 (click: ?page)[==하나를 알게 되니 모든 것들이 의심스러웠다. 한 번 깨진 믿음은 도미노처럼 다른 믿음들을 깨뜨리고 있었다.
-(click: ?page)[(goto:(str:$nextpage))]]</tw-passagedata><tw-passagedata pid="74" name="110" tags="S#A3" position="989.5,2014.5" size="100,100">(set: $pagename to (str:(passage:)&#39;s name))
+(click: ?page)[(goto:(str:$nextpage))]]</tw-passagedata><tw-passagedata pid="74" name="110" tags="S#A3" position="989,2014" size="100,100">(set: $pagename to (str:(passage:)&#39;s name))
 (set: $pagenumber to (num: $pagename))
 (set: $nextpage to $pagenumber+1)
 
 (float-box: &quot;=XXX=&quot;,&quot;====Y=&quot;)+(bg:white)+(b4r:&quot;solid&quot;)+(b4r-colour:black)[(text-style:&quot;sway&quot;)[&#39;&#39;나 : &quot;어디서부터 잘못된 거지...?&quot; &#39;&#39;]
 (click: ?page)[==(text-style:&quot;sway&quot;)[&#39;&#39;나 : &quot;다른 돈들도 썼는지 다시 추궁해야 하나?&quot; &#39;&#39;]
 (click: ?page)[==(text-style:&quot;sway&quot;)[&#39;&#39;나 : &quot;그 동안의 내 노력은 다 물거품이 된건가...?&quot; &#39;&#39;]
-(click: ?page)[(goto:(str:$nextpage))]]</tw-passagedata><tw-passagedata pid="75" name="111" tags="S#A3" position="1108.5,2014.5" size="100,100">(set: $pagename to (str:(passage:)&#39;s name))
+(click: ?page)[(goto:(str:$nextpage))]]</tw-passagedata><tw-passagedata pid="75" name="111" tags="S#A3" position="1108,2014" size="100,100">(set: $pagename to (str:(passage:)&#39;s name))
 (set: $pagenumber to (num: $pagename))
 (set: $nextpage to $pagenumber+1)
 
 (float-box: &quot;=XXX=&quot;,&quot;====Y=&quot;)+(bg:white)+(b4r:&quot;solid&quot;)+(b4r-colour:black)[&#39;&#39;나 : &quot;나 정말 열심히 살았는데... 나는... 엄마는 왜... &quot;&#39;&#39;
 (click: ?page)[==(text-style:&quot;shudder&quot;)[(쨍그랑)]
 (click: ?page)[==&#39;&#39;사장님: &quot;이게 무슨 소리야! 너 괜찮니? 안 다쳤어?&quot;&#39;&#39;
-(click: ?page)[(goto:(str:$nextpage))]]</tw-passagedata><tw-passagedata pid="76" name="112" tags="S#A3" position="1228.5,2014.5" size="100,100">(set: $pagename to (str:(passage:)&#39;s name))
+(click: ?page)[(goto:(str:$nextpage))]]</tw-passagedata><tw-passagedata pid="76" name="112" tags="S#A3" position="1228,2014" size="100,100">(set: $pagename to (str:(passage:)&#39;s name))
 (set: $pagenumber to (num: $pagename))
 (set: $nextpage to $pagenumber+1)
 
 (float-box: &quot;=XXX=&quot;,&quot;====Y=&quot;)+(bg:white)+(b4r:&quot;solid&quot;)+(b4r-colour:black)[&#39;&#39;나: &quot;아, 죄...죄송합니다!  잠깐 다른 생각을 하다가..&quot;&#39;&#39;
 (click: ?page)[==정신을 차리고 아래를 내려다보니, 날카로운 접시 조각들이 발치에 흩어져있었다. 
 (click: ?page)[==깨어진 조각마다 내 얼굴이 흐릿하게 비쳐 보였다. 
-(click: ?page)[(goto:(str:$nextpage))]]</tw-passagedata><tw-passagedata pid="77" name="113" tags="S#A3" position="1350.5,2015.5" size="100,100">(set: $pagename to (str:(passage:)&#39;s name))
+(click: ?page)[(goto:(str:$nextpage))]]</tw-passagedata><tw-passagedata pid="77" name="113" tags="S#A3" position="1350,2015" size="100,100">(set: $pagename to (str:(passage:)&#39;s name))
 (set: $pagenumber to (num: $pagename))
 (set: $nextpage to $pagenumber+1)
 
 (float-box: &quot;=XXX=&quot;,&quot;====Y=&quot;)+(bg:white)+(b4r:&quot;solid&quot;)+(b4r-colour:black)[(text-style:&quot;fade-in-out&quot;)[한 번 깨진 믿음은... ... 도미노처럼... ... 다른 믿음들... ...]
 (click: ?page)[==&#39;&#39;사장님 : &quot;얘!! 왜 멀뚱멀뚱 서 있어?&quot;&#39;&#39;
 (click: ?page)[==&#39;&#39;나 : &quot;아! 죄송합니다!!&quot; &#39;&#39;
-(click: ?page)[(goto:(str:$nextpage))]]</tw-passagedata><tw-passagedata pid="78" name="114" tags="S#A3" position="1468.5,2014.5" size="100,100">(set: $pagename to (str:(passage:)&#39;s name))
+(click: ?page)[(goto:(str:$nextpage))]]</tw-passagedata><tw-passagedata pid="78" name="114" tags="S#A3" position="1468,2014" size="100,100">(set: $pagename to (str:(passage:)&#39;s name))
 (set: $pagenumber to (num: $pagename))
 (set: $nextpage to $pagenumber+1)
 
 (float-box: &quot;=XXX=&quot;,&quot;====Y=&quot;)+(bg:white)+(b4r:&quot;solid&quot;)+(b4r-colour:black)[아, 큰일이다! 짤리면 안 되는데... 지금같은 상황에서는 더더욱. 
 (click: ?page)[==&#39;&#39;나 : &quot;죄송합니다. 죄송합니다. 빨리 치우겠습니다.&quot;&#39;&#39;
 (click: ?page)[==&#39;&#39;사장님: &quot;오늘 정말 왜 이러니? 하루종일 정신이 빠져있고..&quot;&#39;&#39;
-(click: ?page)[(goto:(str:$nextpage))]]</tw-passagedata><tw-passagedata pid="79" name="115" tags="S#A3" position="1588.5,2014.5" size="100,100">(set: $pagename to (str:(passage:)&#39;s name))
+(click: ?page)[(goto:(str:$nextpage))]]</tw-passagedata><tw-passagedata pid="79" name="115" tags="S#A3" position="1588,2014" size="100,100">(set: $pagename to (str:(passage:)&#39;s name))
 (set: $pagenumber to (num: $pagename))
 (set: $nextpage to $pagenumber+1)
 
 (float-box: &quot;=XXX=&quot;,&quot;====Y=&quot;)+(bg:white)+(b4r:&quot;solid&quot;)+(b4r-colour:black)[연신 굽신거리며 접시의 파편을 치웠다. 안 그래도 복잡했던 머리가 더 복잡해졌다. 
 (click: ?page)[==&#39;&#39;사장님: &quot;오늘은 그냥 빨리 들어가서 좀 쉬어라.&quot; &#39;&#39;
 (click: ?page)[==&#39;&#39;나 : &quot;...네?&quot;&#39;&#39;
-(click: ?page)[(goto:(str:$nextpage))]]</tw-passagedata><tw-passagedata pid="80" name="116" tags="S#A3" position="1708.5,2014.5" size="100,100">(set: $pagename to (str:(passage:)&#39;s name))
+(click: ?page)[(goto:(str:$nextpage))]]</tw-passagedata><tw-passagedata pid="80" name="116" tags="S#A3" position="1708,2014" size="100,100">(set: $pagename to (str:(passage:)&#39;s name))
 (set: $pagenumber to (num: $pagename))
 (set: $nextpage to $pagenumber+1)
 
@@ -593,14 +607,14 @@ tw-sidebar
 (click: ?page)[==&#39;&#39;나 : &quot;아...네...죄송합니다!&quot;&#39;&#39;
 (click: ?page)[==고민하는 게 얼굴에 다 드러났나보다. 그래도 짤리진 않아서 다행이다. 
 ... 그래 오늘은 쉬는 게 낫겠다. 
-(click: ?page)[(goto:(str:$nextpage))]]</tw-passagedata><tw-passagedata pid="81" name="117" tags="S#A4" position="764.5,2188.5" size="100,100">(set: $pagename to (str:(passage:)&#39;s name))
+(click: ?page)[(goto:(str:$nextpage))]]</tw-passagedata><tw-passagedata pid="81" name="117" tags="S#A4" position="764,2188" size="100,100">(set: $pagename to (str:(passage:)&#39;s name))
 (set: $pagenumber to (num: $pagename))
 (set: $nextpage to $pagenumber+1)
 
 (float-box: &quot;=XXX=&quot;,&quot;====Y=&quot;)+(bg:white)+(b4r:&quot;solid&quot;)+(b4r-colour:black)[그래도 집에 들어가기는 싫다. 지금 엄마를 보면 또 무슨 말을 할지 모르겠다. 
 (click: ?page)[==외박을 해서 마음은 불편하지만... 
 (click: ?page)[==&#39;&#39;나 : &quot;엄마랑 싸우느라 너무 기운을 많이 썼나... 피곤하네.&quot; &#39;&#39;
-(click: ?page)[(goto:(str:$nextpage))]]</tw-passagedata><tw-passagedata pid="82" name="118" tags="S#A4" position="884.5,2187.5" size="100,100">(set: $pagename to (str:(passage:)&#39;s name))
+(click: ?page)[(goto:(str:$nextpage))]]</tw-passagedata><tw-passagedata pid="82" name="118" tags="S#A4" position="884,2187" size="100,100">(set: $pagename to (str:(passage:)&#39;s name))
 (set: $pagenumber to (num: $pagename))
 (set: $nextpage to $pagenumber+1)
 
@@ -613,35 +627,35 @@ tw-sidebar
 (float-box: &quot;=XXX=&quot;,&quot;====Y=&quot;)+(bg:white)+(b4r:&quot;solid&quot;)+(b4r-colour:black)[&#39;&#39;엄마: &quot;네네 교주님 그러면 곧 뵐게요. 들어가세요.&quot;&#39;&#39;
 (click: ?page)[==(뚝)
 (click: ?page)[==엄마의 전화가 끝날 때까지 기다리면서 마음이 차갑게 식었다. 
-(click: ?page)[(goto:(str:$nextpage))]]</tw-passagedata><tw-passagedata pid="84" name="119" tags="S#A5" position="761.5,2329.5" size="100,100">(set: $pagename to (str:(passage:)&#39;s name))
+(click: ?page)[(goto:(str:$nextpage))]]</tw-passagedata><tw-passagedata pid="84" name="119" tags="S#A5" position="761,2329" size="100,100">(set: $pagename to (str:(passage:)&#39;s name))
 (set: $pagenumber to (num: $pagename))
 (set: $nextpage to $pagenumber+1)
 
 (float-box: &quot;=XXX=&quot;,&quot;====Y=&quot;)+(bg:white)+(b4r:&quot;solid&quot;)+(b4r-colour:black)[//(text-colour:grey)[으으음... 뭐지?]//
 (click: ?page)[==무언가 익숙한 기분이 들었다. 조금 흐릿한 시야, 또렷한 의식, 나오지 않는 목소리. 
 (click: ?page)[==어제 꿨던 꿈과 같은 상황이다. 
-(click: ?page)[(goto:(str:$nextpage))]]</tw-passagedata><tw-passagedata pid="85" name="120" tags="S#A5" position="881.5,2329.5" size="100,100">(set: $pagename to (str:(passage:)&#39;s name))
+(click: ?page)[(goto:(str:$nextpage))]]</tw-passagedata><tw-passagedata pid="85" name="120" tags="S#A5" position="881,2329" size="100,100">(set: $pagename to (str:(passage:)&#39;s name))
 (set: $pagenumber to (num: $pagename))
 (set: $nextpage to $pagenumber+1)
 
 (float-box: &quot;=XXX=&quot;,&quot;====Y=&quot;)+(bg:white)+(b4r:&quot;solid&quot;)+(b4r-colour:black)[//(text-colour:grey)[설마, 이것도 꿈인가?]//
 (click: ?page)[==어리둥절하며 주위를 둘러보았다. 내가 서 있는 장소를 인식하는 데에는 그리 오래 걸리지 않았다. 
 (click: ?page)[==고등학교 때까지 살았던 옛날 집. 그리고 저기 앞에 보이는건... 
-(click: ?page)[(goto:(str:$nextpage))]]</tw-passagedata><tw-passagedata pid="86" name="121" tags="S#A5" position="1001.5,2329.5" size="100,100">(set: $pagename to (str:(passage:)&#39;s name))
+(click: ?page)[(goto:(str:$nextpage))]]</tw-passagedata><tw-passagedata pid="86" name="121" tags="S#A5" position="1001,2329" size="100,100">(set: $pagename to (str:(passage:)&#39;s name))
 (set: $pagenumber to (num: $pagename))
 (set: $nextpage to $pagenumber+1)
 
 (float-box: &quot;=XXX=&quot;,&quot;====Y=&quot;)+(bg:white)+(b4r:&quot;solid&quot;)+(b4r-colour:black)[&#39;&#39;나: &quot;엄마? 어디 가?&quot;&#39;&#39;
 (click: ?page)[==고등학교 시절의 나다. 그리고 현관문 앞에는 엄마가 나갈 준비를 하고 있다. 
 (click: ?page)[==이쯤되니 꿈이 확실한 것 같다. 어제의 꿈처럼 과거를 보여주는 꿈. 
-(click: ?page)[(goto:(str:$nextpage))]]</tw-passagedata><tw-passagedata pid="87" name="122" tags="S#A5" position="1122.5,2330.5" size="100,100">(set: $pagename to (str:(passage:)&#39;s name))
+(click: ?page)[(goto:(str:$nextpage))]]</tw-passagedata><tw-passagedata pid="87" name="122" tags="S#A5" position="1122,2330" size="100,100">(set: $pagename to (str:(passage:)&#39;s name))
 (set: $pagenumber to (num: $pagename))
 (set: $nextpage to $pagenumber+1)
 
 (float-box: &quot;=XXX=&quot;,&quot;====Y=&quot;)+(bg:white)+(b4r:&quot;solid&quot;)+(b4r-colour:black)[이 당시의 나는 정말 공부에 매진했다. 좋은 대학을 가야 좋은 일자리를 얻을 수 있을 테니까. 
 (click: ?page)[==하지만 이 당시의 엄마에게 더 중요한 것은 따로 있었다. 
 (click: ?page)[==&#39;&#39;엄마: &quot;응 딸~ 공부해. 엄마 교회 좀 갔다 올게.&quot;&#39;&#39;
-(click: ?page)[(goto:(str:$nextpage))]]</tw-passagedata><tw-passagedata pid="88" name="123" tags="S#A5" position="1242.5,2329.5" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="89" name="124" tags="S#A5" position="1361.5,2329.5" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="90" name="125" tags="S#A5" position="1481.5,2329.5" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="91" name="126" tags="S#A5" position="1601.5,2329.5" size="100,100">Double-click this passage to edit it.</tw-passagedata></tw-storydata>
+(click: ?page)[(goto:(str:$nextpage))]]</tw-passagedata><tw-passagedata pid="88" name="123" tags="S#A5" position="1242,2329" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="89" name="124" tags="S#A5" position="1361,2329" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="90" name="125" tags="S#A5" position="1481,2329" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="91" name="126" tags="S#A5" position="1601,2329" size="100,100">Double-click this passage to edit it.</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">"use strict";var _slicedToArray=function(){return function(e,t){if(Array.isArray(e))return e;if(Symbol.iterator in Object(e))return function(e,t){var n=[],r=!0,a=!1,i=void 0;try{for(var o,s=e[Symbol.iterator]();!(r=(o=s.next()).done)&&(n.push(o.value),!t||n.length!==t);r=!0);}catch(e){a=!0,i=e}finally{try{!r&&s.return&&s.return()}finally{if(a)throw i}}return n}(e,t);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}!function(){
 /**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
