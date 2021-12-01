@@ -23,6 +23,13 @@ tw-story {
   background-size: auto;
 }
 
+@media only screen and (max-width: 700px) {
+	tw-story {
+		font-size: 15px;
+	}
+}
+
+
 tw-sidebar 
 {
 	display: none;
@@ -68,18 +75,18 @@ tw-story[tags~="S#3"]
 		launchFullScreen(document.documentElement);
 		}
 	};
-};</script><tw-passagedata pid="1" name="title" tags="title" position="410,193" size="100,100">21-2 인터랙티브 스토리텔링 Savior
-
-&lt;input type=&quot;button&quot; value=&quot;이 버튼을 눌러 전체화면 모드로 감상해 주세요&quot; onclick=&quot;makeitbig.myEventHandler();&quot;&gt;
-
-(click: ?page)[(goto:&#39;1&#39;)]</tw-passagedata><tw-passagedata pid="2" name="1" tags="S#1" position="535,198" size="100,100">&lt;script&gt;
+};</script><tw-passagedata pid="1" name="title" tags="title" position="410,193" size="100,100">&lt;script&gt;
 	var audio = document.createElement(&#39;audio&#39;);
 	audio.src = &#39;./resource/main.mp3&#39;;
 	audio.loop = true;
 	audio.play();
 &lt;/script&gt;
 
-(set: $pagename to (str:(passage:)&#39;s name))
+21-2 인터랙티브 스토리텔링 Savior
+
+&lt;input type=&quot;button&quot; value=&quot;이 버튼을 눌러 전체화면 모드로 감상해 주세요&quot; onclick=&quot;makeitbig.myEventHandler();&quot;&gt;
+
+(click: ?page)[(goto:&#39;1&#39;)]</tw-passagedata><tw-passagedata pid="2" name="1" tags="S#1" position="535,198" size="100,100">(set: $pagename to (str:(passage:)&#39;s name))
 (set: $pagenumber to (num: $pagename))
 (set: $nextpage to $pagenumber+1)
 
@@ -141,9 +148,9 @@ tw-story[tags~="S#3"]
 (float-box: &quot;=XXX=&quot;,&quot;====Y=&quot;)+(bg:white)+(b4r:&quot;solid&quot;)+(b4r-colour:black)[&#39;&#39;엄마: &quot;이번에는 정말 중요한 이야기야. 정말이야.&quot;&#39;&#39;
 (click: ?page)[==(text-style:&quot;bold&quot;)[엄마: &quot;딸, 엄마 부탁 한번만 들어줘. 크리스마스 선물이라고 생각하고 한번만.. 이번 한번만.. &quot;]
 (click: ?page)[==저렇게까지 애원하는 엄마의 모습은 처음이긴 하다.  
-(click: ?page)[(goto:(str:$nextpage))]]</tw-passagedata><tw-passagedata pid="11" name="10" tags="S#3" position="688,439" size="100,100">(float-box: &quot;=XXX=&quot;,&quot;====Y=&quot;)+(bg:white)+(b4r:&quot;solid&quot;)+(b4r-colour:black)[하지만 그래봐야 사이비 종교 얘기일텐데… 안 듣느니만 못할 수도 있다.
-(text-style:&quot;outline&quot;)[[[-&gt;일단은 피곤하니까 방으로 들어가서 쉰다.-&gt;11]]]
-(text-style:&quot;outline&quot;)[[[-&gt;속는 셈 치고 엄마 앞에 앉는다-&gt;21]]]]</tw-passagedata><tw-passagedata pid="12" name="11" tags="S#4.1" position="528,587" size="100,100">(set: $pagename to (str:(passage:)&#39;s name))
+(click: ?page)[(goto:(str:$nextpage))]]</tw-passagedata><tw-passagedata pid="11" name="10" tags="S#3" position="687,439" size="100,100">(float-box: &quot;=XXX=&quot;,&quot;====Y=&quot;)+(bg:white)+(b4r:&quot;solid&quot;)+(b4r-colour:black)[하지만 그래봐야 사이비 종교 얘기일텐데… 안 듣느니만 못할 수도 있다.
+(text-style:&quot;outline&quot;)[[[-&gt; 일단은 피곤하니까 방으로 들어가서 쉰다.-&gt;11]]]
+(text-style:&quot;outline&quot;)[[[-&gt; 속는 셈 치고 엄마 앞에 앉는다.-&gt;21]]]]</tw-passagedata><tw-passagedata pid="12" name="11" tags="S#4.1" position="528,587" size="100,100">(set: $pagename to (str:(passage:)&#39;s name))
 (set: $pagenumber to (num: $pagename))
 (set: $nextpage to $pagenumber+1)
 
