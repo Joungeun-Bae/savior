@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1" name="viewport">
-<title>Combine</title>
+<title>1209_savior</title>
 <style title="Twine CSS">@keyframes appear{0%{opacity:0}to{opacity:1}}@keyframes fade-in-out{0%,to{opacity:0}50%{opacity:1}}@keyframes rumble{25%{top:-0.1em}75%{top:0.1em}0%,to{top:0px}}@keyframes shudder{25%{left:0.1em}75%{left:-0.1em}0%,to{left:0px}}@keyframes buoy{25%{top:0.25em}75%{top:-0.25em}0%,to{top:0px}}@keyframes sway{25%{left:0.25em}75%{left:-0.25em}0%,to{left:0px}}@keyframes pulse{0%{transform:scale(0, 0)}20%{transform:scale(1.2, 1.2)}40%{transform:scale(0.9, 0.9)}60%{transform:scale(1.05, 1.05)}80%{transform:scale(0.925, 0.925)}to{transform:scale(1, 1)}}@keyframes zoom-in{0%{transform:scale(0, 0)}to{transform:scale(1, 1)}}@keyframes shudder-in{0%, to{transform:translateX(0em)}5%, 25%, 45%{transform:translateX(-1em)}15%, 35%, 55%{transform:translateX(1em)}65%{transform:translateX(-0.6em)}75%{transform:translateX(0.6em)}85%{transform:translateX(-0.2em)}95%{transform:translateX(0.2em)}}@keyframes rumble-in{0%, to{transform:translateY(0em)}5%, 25%, 45%{transform:translateY(-1em)}15%, 35%, 55%{transform:translateY(1em)}65%{transform:translateY(-0.6em)}75%{transform:translateY(0.6em)}85%{transform:translateY(-0.2em)}95%{transform:translateY(0.2em)}}@keyframes fidget{0%, 8.1%, 82.1%, 31.1%, 38.1%, 44.1%, 40.1%, 47.1%, 74.1%, 16.1%, 27.1%, 72.1%, 24.1%, 95.1%, 6.1%, 36.1%, 20.1%, 4.1%, 91.1%, 14.1%, 87.1%, to{left:0px;top:0px}8%, 82%, 31%, 38%, 44%{left:-1px}40%, 47%, 74%, 16%, 27%{left:1px}72%, 24%, 95%, 6%, 36%{top:-1px}20%, 4%, 91%, 14%, 87%{top:1px}}@keyframes slide-right{0%{transform:translateX(-100vw)}}@keyframes slide-left{0%{transform:translateX(100vw)}}@keyframes slide-up{0%{transform:translateY(100vh)}}@keyframes slide-down{0%{transform:translateY(-100vh)}}@keyframes fade-right{0%{opacity:0;transform:translateX(-1em)}to{opacity:1}}@keyframes fade-left{0%{opacity:0;transform:translateX(1em)}to{opacity:1}}@keyframes fade-up{0%{opacity:0;transform:translateY(1em)}to{opacity:1}}@keyframes fade-down{0%{opacity:0;transform:translateY(-1em)}to{opacity:1}}@keyframes flicker{0%,29%,31%,63%,65%,77%,79%,86%,88%,91%,93%{opacity:0}30%{opacity:0.2}64%{opacity:0.4}78%{opacity:0.6}87%{opacity:0.8}92%, to{opacity:1}}@keyframes blur{0%{filter:blur(2rem);opacity:0}25%{opacity:1}to{filter:blur(0rem);opacity:1}}.dom-debug-mode tw-story,.dom-debug-mode tw-passage,.dom-debug-mode tw-sidebar,.dom-debug-mode tw-include,.dom-debug-mode tw-hook,.dom-debug-mode tw-expression,.dom-debug-mode tw-link,.dom-debug-mode tw-dialog,.dom-debug-mode tw-columns,.dom-debug-mode tw-column,.dom-debug-mode tw-align{outline:1px solid #f5a3da;min-height:32px;display:block !important}.dom-debug-mode tw-story::before,.dom-debug-mode tw-passage::before,.dom-debug-mode tw-sidebar::before,.dom-debug-mode tw-include::before,.dom-debug-mode tw-hook::before,.dom-debug-mode tw-expression::before,.dom-debug-mode tw-link::before,.dom-debug-mode tw-dialog::before,.dom-debug-mode tw-columns::before,.dom-debug-mode tw-column::before,.dom-debug-mode tw-align::before{position:absolute;top:0;left:0;height:16px;background-color:#f5a3da;color:black;font-size:16px;font-weight:normal;font-style:normal;font-family:monospace;display:inline-block;line-height:100%;white-space:pre;z-index:999997}.dom-debug-mode tw-story:hover,.dom-debug-mode tw-passage:hover,.dom-debug-mode tw-sidebar:hover,.dom-debug-mode tw-include:hover,.dom-debug-mode tw-hook:hover,.dom-debug-mode tw-expression:hover,.dom-debug-mode tw-link:hover,.dom-debug-mode tw-dialog:hover,.dom-debug-mode tw-columns:hover,.dom-debug-mode tw-column:hover,.dom-debug-mode tw-align:hover{outline:1px solid #fc9}.dom-debug-mode tw-story:hover::before,.dom-debug-mode tw-passage:hover::before,.dom-debug-mode tw-sidebar:hover::before,.dom-debug-mode tw-include:hover::before,.dom-debug-mode tw-hook:hover::before,.dom-debug-mode tw-expression:hover::before,.dom-debug-mode tw-link:hover::before,.dom-debug-mode tw-dialog:hover::before,.dom-debug-mode tw-columns:hover::before,.dom-debug-mode tw-column:hover::before,.dom-debug-mode tw-align:hover::before{background-color:#fc9;transition:background-color 1s}.dom-debug-mode tw-passage,.dom-debug-mode tw-include,.dom-debug-mode tw-hook,.dom-debug-mode tw-expression,.dom-debug-mode tw-link,.dom-debug-mode tw-dialog,.dom-debug-mode tw-columns,.dom-debug-mode tw-column,.dom-debug-mode tw-align{padding:1em;margin:0}.dom-debug-mode tw-story::before{content:'<tw-story tags="' attr(tags) '">'}.dom-debug-mode tw-passage::before{top:-16px;content:'<tw-passage tags="' attr(tags) '">'}.dom-debug-mode tw-sidebar::before{top:-16px;content:"<tw-sidebar>"}.dom-debug-mode tw-hook::before{content:'<tw-hook name="' attr(name) '">'}.dom-debug-mode tw-expression::before{content:'<tw-expression name="' attr(name) '">'}.dom-debug-mode tw-link::before{content:'<tw-link name="' attr(name) '">'}.dom-debug-mode tw-dialog::before{content:"<tw-dialog>"}.dom-debug-mode tw-columns::before{content:"<tw-columns>"}.dom-debug-mode tw-column::before{content:"<tw-column>"}.dom-debug-mode tw-align::before{content:"<tw-align>"}.dom-debug-mode tw-include::before{content:'<tw-include type="' attr(type) '" name="' attr(name) '">'}.debug-mode tw-expression{display:inline-block !important}.debug-mode tw-expression[type=variable]::after{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:"$" attr(name)}.debug-mode tw-expression[type=tempVariable]::after{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:"_" attr(name)}.debug-mode tw-expression[return=boolean]{background-color:rgba(179,179,179,0.2)}.debug-mode tw-expression[return=array]{background-color:rgba(255,102,102,0.2)}.debug-mode tw-expression[return=dataset]{background-color:rgba(255,128,0,0.2)}.debug-mode tw-expression[return=number]{background-color:rgba(255,179,102,0.2)}.debug-mode tw-expression[return=datamap]{background-color:rgba(255,255,102,0.2)}.debug-mode tw-expression[return=changer]{background-color:rgba(179,255,102,0.2)}.debug-mode tw-expression[return=lambda]{background-color:rgba(102,255,102,0.2)}.debug-mode tw-expression[return=hookname]{background-color:rgba(102,255,204,0.2)}.debug-mode tw-expression[return=string]{background-color:rgba(102,255,255,0.2)}.debug-mode tw-expression[return=datatype]{background-color:rgba(102,153,255,0.2)}.debug-mode tw-expression[return=gradient],.debug-mode tw-expression[return=colour]{background-color:rgba(204,102,255,0.2)}.debug-mode tw-expression[return=instant],.debug-mode tw-expression[return=macro]{background-color:rgba(240,117,199,0.2)}.debug-mode tw-expression[return=command]{background-color:rgba(153,153,255,0.2)}.debug-mode tw-expression.false{background-color:rgba(255,0,0,0.2) !important}.debug-mode tw-expression[type=macro]::before{content:"(" attr(name) ":)";padding:0 0.5rem;font-size:1rem;vertical-align:middle;line-height:normal;background-color:inherit;border:1px solid rgba(255,255,255,0.5)}.debug-mode tw-hook{background-color:rgba(0,85,255,0.1) !important}.debug-mode tw-hook::before{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:"["}.debug-mode tw-hook::after{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:"]"}.debug-mode tw-hook[name]::after{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:"]<" attr(name) "|"}.debug-mode tw-pseudo-hook{background-color:rgba(255,170,0,0.1) !important}.debug-mode tw-collapsed::before{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:"{"}.debug-mode tw-collapsed::after{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:"}"}.debug-mode tw-verbatim::before,.debug-mode tw-verbatim::after{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:"`"}.debug-mode tw-align[style*="text-align: center"]{background:linear-gradient(to right, rgba(255,204,189,0) 0%, rgba(255,204,189,0.25) 50%, rgba(255,204,189,0) 100%)}.debug-mode tw-align[style*="text-align: left"]{background:linear-gradient(to right, rgba(255,204,189,0.25) 0%, rgba(255,204,189,0) 100%)}.debug-mode tw-align[style*="text-align: right"]{background:linear-gradient(to right, rgba(255,204,189,0) 0%, rgba(255,204,189,0.25) 100%)}.debug-mode tw-column{background-color:rgba(189,228,255,0.2)}.debug-mode tw-enchantment{animation:enchantment 0.5s infinite;border:1px solid}.debug-mode tw-link::after,.debug-mode tw-broken-link::after{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:attr(passage-name)}.debug-mode tw-include{background-color:rgba(204,128,51,0.1)}.debug-mode tw-include::before{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:attr(type) ' "' attr(name) '"'}@keyframes enchantment{0%,to{border-color:#ffb366}50%{border-color:#6fc}}tw-debugger{position:fixed;box-sizing:border-box;bottom:0;right:0;z-index:999999;min-width:10em;min-height:1em;padding:0em 0.5em 0.5em 1em;font-size:1.25em;font-family:sans-serif;color:#000;border-left:solid #000 2px;border-top:solid #000 2px;border-top-left-radius:.5em;background:#fff;opacity:1}tw-debugger select{margin-right:1em;width:12em}tw-debugger button{border-radius:3px;border:solid #999 1px;margin:auto 4px;background-color:#fff;font-size:inherit;color:#000}tw-debugger button.enabled{background-color:#eee;box-shadow:inset #ddd 3px 5px 0.5em}tw-debugger .panel{display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;position:absolute;bottom:100%;left:-2px;right:0;padding:1em;max-height:40vh;overflow-y:scroll;overflow-x:hidden;z-index:999998;background:#fff;border:inherit;border-bottom:solid #999 2px;border-top-left-radius:.5em;border-bottom-left-radius:.5em;font-size:0.8em}tw-debugger .panel:empty,tw-debugger .panel[hidden]{display:none}tw-debugger .panel-source,tw-debugger .panel-row-source{font-family:monospace;overflow-x:scroll;white-space:pre;-ms-flex-preferred-size:100%;flex-basis:100%}tw-debugger .panel-row-source{margin:5px 0}tw-debugger .panel-rows{width:100%;overflow-x:scroll}tw-debugger .panel-rows>*{display:table-row}tw-debugger .panel-rows>div:nth-of-type(2n){background:#EEE}tw-debugger .panel-row-buttons{text-align:right}tw-debugger .panel-variables .panel-rows:empty::before{content:"~ No variables ~";font-style:italic;color:#888;text-align:center}tw-debugger .panel-enchantments .panel-rows:empty::before{content:"~ No enchantments ~";font-style:italic;color:#888;text-align:center}tw-debugger .panel-errors .panel-rows:empty::before{content:"~ No errors... for now. ~";font-style:italic;color:#888;text-align:center}tw-debugger .panel-rows:empty+.panel-variables-bottom{display:none}tw-debugger .panel-storylets:not(.panel-exclusive) .storylet-exclusive,tw-debugger .panel-storylets:not(.panel-urgent) .storylet-urgent{display:none}tw-debugger .panel-variables-bottom{padding-top:5px}tw-debugger .enchantment-row{min-height:1.5em}tw-debugger .variable-path{opacity:0.4}tw-debugger .temporary-variable-scope,tw-debugger .enchantment-local{font-family:sans-serif;font-weight:normal;opacity:0.8;font-size:0.75em}tw-debugger .temporary-variable-scope:not(:empty)::before,tw-debugger .enchantment-local:not(:empty)::before{content:" in "}tw-debugger .variable-name,tw-debugger .enchantment-name{font-family:monospace;font-weight:bold}tw-debugger .variable-type{color:#444;font-weight:normal;text-overflow:ellipsis;overflow:hidden;max-width:10em}tw-debugger .error-row{display:table-row;background-color:rgba(230,101,204,0.3)}tw-debugger .error-row:nth-of-type(2n){background-color:rgba(237,145,219,0.3)}tw-debugger .error-row>*{display:table-cell;padding:0.25em 0.5em}tw-debugger .error-row .error-message{cursor:help}tw-debugger .error-row .error-passage{color:#444}tw-debugger .storylet-row{background-color:rgba(201,233,222,0.3)}tw-debugger .storylet-row:nth-child(2n){background-color:rgba(128,203,178,0.3)}tw-debugger .storylet-row.storylet-closed{font-style:italic;opacity:0.4;background-color:rgba(217,217,217,0.3)}tw-debugger .storylet-row.storylet-closed:nth-child(2n){background-color:rgba(166,166,166,0.3)}.storylet-error tw-debugger .storylet-row{background-color:rgba(230,101,204,0.3)}.storylet-error tw-debugger .storylet-row:nth-child(2n){background-color:rgba(237,145,219,0.3)}tw-debugger .storylet-row .storylet-name,tw-debugger .storylet-row .storylet-value{display:inline-block;width:50%}tw-debugger .tabs{padding-bottom:0.5em}tw-debugger .tab{border-radius:0px 0px 0.5em 0.5em;border-top:none}tw-debugger .resizer{position:absolute;height:3em;border-left:2px solid #ccc;border-right:2px solid #ccc;top:10px;left:4px;width:8px;cursor:ew-resize}tw-dialog{z-index:999997;border:#fff solid 2px;padding:2em;color:#fff;background-color:#000;display:block}@media (min-width: 576px){tw-dialog{max-width:50vw}}tw-dialog input[type=text]{font-size:inherit;width:100%}tw-dialog-links{text-align:right;display:-ms-flexbox;display:flex;-ms-flex-pack:end;justify-content:flex-end}tw-backdrop{z-index:999996;position:fixed;top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,0.8);display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;-ms-flex-pack:center;justify-content:center}tw-backdrop ~ tw-backdrop{display:none}tw-link,.link,tw-icon,.enchantment-clickblock{cursor:pointer}tw-link,.enchantment-link{color:#4169E1;font-weight:bold;text-decoration:none;transition:color 0.2s ease-in-out}tw-passage [style^="color"] tw-link:not(:hover),tw-passage [style*=" color"] tw-link:not(:hover),tw-passage [style^="color"][hover="true"] tw-link:hover,tw-passage [style*=" color"][hover="true"] tw-link:hover,tw-passage [style^="color"] .enchantment-link:not(:hover),tw-passage [style*=" color"] .enchantment-link:not(:hover),tw-passage [style^="color"][hover="true"] .enchantment-link:hover,tw-passage [style*=" color"][hover="true"] .enchantment-link:hover{color:inherit}tw-link:hover,.enchantment-link:hover{color:#00bfff}tw-link:active,.enchantment-link:active{color:#DD4B39}.visited{color:#6941e1}tw-passage [style^="color"] .visited:not(:hover),tw-passage [style*=" color"] .visited:not(:hover),tw-passage [style^="color"][hover="true"] .visited:hover,tw-passage [style*=" color"][hover="true"] .visited:hover{color:inherit}.visited:hover{color:#E3E}tw-broken-link{color:#993333;border-bottom:2px solid #993333;cursor:not-allowed}tw-passage [style^="color"] tw-broken-link:not(:hover),tw-passage [style*=" color"] tw-broken-link:not(:hover),tw-passage [style^="color"][hover="true"] tw-broken-link:hover,tw-passage [style*=" color"][hover="true"] tw-broken-link:hover{color:inherit}.enchantment-mouseover{border-bottom:2px dashed #999}.enchantment-mouseout{border:rgba(64,149,191,0.6) 1px solid}.enchantment-mouseout:hover{background-color:rgba(175,197,207,0.75);border:transparent 1px solid;border-radius:0.2em}.enchantment-clickblock{width:100%;height:100%;display:block}.enchantment-clickblock>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;color:rgba(65,105,225,0.5);transition:color 0.2s ease-in-out}.enchantment-clickblock>:not(tw-enchantment):hover::after{color:rgba(0,191,255,0.5)}.enchantment-clickblock>:not(tw-enchantment):active::after{color:rgba(222,78,59,0.5)}.enchantment-clickblock>:not(tw-enchantment)::after{box-shadow:inset 0 0 0 0.5vmax}.enchantment-clickblock>tw-passage::after,.enchantment-clickblock>tw-sidebar::after{box-shadow:0 0 0 0.5vmax}.enchantment-mouseoverblock>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;border:2px dashed #999}.enchantment-mouseoutblock>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;border:rgba(64,149,191,0.6) 2px solid}.enchantment-mouseoutblock:hover>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;background-color:rgba(175,197,207,0.75);border:transparent 2px solid;border-radius:0.2em}tw-link.enchantment-button,.enchantment-link.enchantment-button,.enchantment-button:not(.enchantment-link) tw-link,.enchantment-button:not(.enchantment-link) .enchantment-link{border-radius:16px;border-style:solid;border-width:2px;text-align:center;padding:0px 8px;display:block}tw-dialog-links{padding-top:1.5em}tw-dialog-links tw-link{border-radius:16px;border-style:solid;border-width:2px;text-align:center;padding:0px 8px;display:block;display:inline-block}html{margin:0;height:100%;overflow-x:hidden}*,:before,:after{position:relative;box-sizing:inherit}body{margin:0;height:100%}tw-storydata{display:none}tw-story{display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;font:100% Georgia, serif;box-sizing:border-box;width:100%;min-height:100%;font-size:1.5em;line-height:1.5em;padding:5% 5%;overflow:hidden;background-color:#000;color:#fff}tw-story [style*=content-box] *{box-sizing:border-box}@media (min-width: 576px){tw-story{padding:5% 20%}}tw-story tw-consecutive-br{display:block;height:1.6ex;visibility:hidden}tw-story select{background-color:transparent;font:inherit;border-style:solid;padding:2px}tw-story select:not([disabled]){color:inherit}tw-story textarea{resize:none;background-color:transparent;font:inherit;color:inherit;border-style:none;padding:2px}tw-story input[type=checkbox]{transform:scale(1.5);margin:0 0.5em}tw-story tw-noscript{animation:appear 0.8s}tw-passage{display:block}tw-sidebar{text-align:center;display:-ms-flexbox;display:flex;-ms-flex-pack:justify;justify-content:space-between}@media (min-width: 576px){tw-sidebar{left:-5em;width:3em;position:absolute;-ms-flex-direction:column;flex-direction:column}tw-enchantment[style*="width"]>tw-sidebar{width:inherit}}tw-icon{display:inline-block;margin:0.5em 0;font-size:66px;font-family:"Verdana",sans-serif}tw-icon[alt]{opacity:0.2}tw-icon[alt]:hover{opacity:0.4}tw-icon[data-label]::after{font-weight:bold;content:attr(data-label);font-size:20px;bottom:-20px;left:-50%;white-space:nowrap}tw-meter{display:block}tw-hook:empty,tw-expression:empty{display:none}tw-error{display:inline-block;border-radius:0.2em;padding:0.2em;font-size:1rem;cursor:help;white-space:pre-wrap}tw-error.error{background-color:rgba(223,58,190,0.6);color:#fff}tw-error.warning{background-color:rgba(223,140,58,0.6);color:#fff;display:none}.debug-mode tw-error.warning{display:inline}tw-error-explanation{display:block;font-size:0.8rem;line-height:1rem}tw-open-button,tw-folddown{cursor:pointer;line-height:0em;border-radius:1px;border:1px solid black;font-size:0.8rem;margin:0 0.4rem;padding:2px;white-space:pre}tw-folddown::after{content:"\25b6"}tw-folddown.open::after{content:"\25bc"}tw-open-button::after{content:"Open"}tw-notifier{border-radius:0.2em;padding:0.2em;font-size:1rem;background-color:rgba(223,182,58,0.4);display:none}.debug-mode tw-notifier{display:inline}tw-notifier::before{content:attr(message)}tw-colour{border:1px solid black;display:inline-block;width:1em;height:1em}tw-enchantment:empty{display:none}h1{font-size:3em}h2{font-size:2.25em}h3{font-size:1.75em}h1,h2,h3,h4,h5,h6{line-height:1em;margin:0.3em 0 0.6em 0}pre{font-size:1rem;line-height:initial}small{font-size:70%}big{font-size:120%}mark{color:rgba(0,0,0,0.6);background-color:#ff9}ins{color:rgba(0,0,0,0.6);background-color:rgba(255,242,204,0.5);border-radius:0.5em;box-shadow:0em 0em 0.2em #ffe699;text-decoration:none}center{text-align:center;margin:0 auto;width:60%}blink{text-decoration:none;animation:fade-in-out 1s steps(1, end) infinite alternate}tw-align{display:block}tw-columns{display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;-ms-flex-pack:justify;justify-content:space-between}.transition-in{animation:appear 0ms step-start}.transition-out{animation:appear 0ms step-end}[data-t8n^=dissolve].transition-in,[data-t8n=fade].transition-in{animation:appear .8s}[data-t8n^=dissolve].transition-out,[data-t8n=fade].transition-out{animation:appear .8s reverse}[data-t8n^=shudder].transition-in{display:inline-block !important;animation:shudder-in .8s}[data-t8n^=shudder].transition-out{display:inline-block !important;animation:shudder-in .8s reverse}[data-t8n^=rumble].transition-in{display:inline-block !important;animation:rumble-in .8s}[data-t8n^=rumble].transition-out{display:inline-block !important;animation:rumble-in .8s reverse}[data-t8n^=pulse].transition-in{animation:pulse .8s;display:inline-block !important}[data-t8n^=pulse].transition-out{animation:pulse .8s reverse;display:inline-block !important}[data-t8n^=zoom].transition-in{animation:zoom-in .8s;display:inline-block !important}[data-t8n^=zoom].transition-out{animation:zoom-in .8s reverse;display:inline-block !important}[data-t8n^=blur].transition-in{animation:blur .8s;display:inline-block !important}[data-t8n^=blur].transition-out{animation:blur .8s reverse;display:inline-block !important}[data-t8n^=slideleft].transition-in{animation:slide-left .8s;display:inline-block !important}[data-t8n^=slideleft].transition-out{animation:slide-right .8s reverse;display:inline-block !important}[data-t8n^=slideright].transition-in{animation:slide-right .8s;display:inline-block !important}[data-t8n^=slideright].transition-out{animation:slide-left .8s reverse;display:inline-block !important}[data-t8n^=slideup].transition-in{animation:slide-up .8s;display:inline-block !important}[data-t8n^=slideup].transition-out{animation:slide-down .8s reverse;display:inline-block !important}[data-t8n^=slidedown].transition-in{animation:slide-down .8s;display:inline-block !important}[data-t8n^=slidedown].transition-out{animation:slide-up .8s reverse;display:inline-block !important}[data-t8n^=fadeleft].transition-in{animation:fade-left .8s;display:inline-block !important}[data-t8n^=fadeleft].transition-out{animation:fade-right .8s reverse;display:inline-block !important}[data-t8n^=faderight].transition-in{animation:fade-right .8s;display:inline-block !important}[data-t8n^=faderight].transition-out{animation:fade-left .8s reverse;display:inline-block !important}[data-t8n^=fadeup].transition-in{animation:fade-up .8s;display:inline-block !important}[data-t8n^=fadeup].transition-out{animation:fade-down .8s reverse;display:inline-block !important}[data-t8n^=fadedown].transition-in{animation:fade-down .8s;display:inline-block !important}[data-t8n^=fadedown].transition-out{animation:fade-up .8s reverse;display:inline-block !important}[data-t8n^=flicker].transition-in{animation:flicker .8s}[data-t8n^=flicker].transition-out{animation:flicker .8s reverse}
 </style>
 </head>
 <body>
-<tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play Combine.</tw-noscript></noscript></tw-story>
-<tw-storydata name="Combine" startnode="1" creator="Twine" creator-version="2.3.15" ifid="1D999B19-4B47-419C-9BE5-45CE0E5D830F" zoom="1" format="Harlowe" format-version="3.2.3" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">/**
+<tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play 1209_savior.</tw-noscript></noscript></tw-story>
+<tw-storydata name="1209_savior" startnode="1" creator="Twine" creator-version="2.3.15" ifid="1D999B19-4B47-419C-9BE5-45CE0E5D830F" zoom="1" format="Harlowe" format-version="3.2.3" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">/**
  * Harlowe Audio Library (HAL), by Chapel, v2.2.1
  * for Harlowe 2.1.0 and higher
  * Released under the Unlicense, and dedicated to the public domain.
@@ -244,7 +244,7 @@ tw-story[tags~="S#E3.3"]
 
 tw-story[tags~="S#B"]
 {
-	background-image: url("./resource/s10.png");
+	background-image: url("./resource/s11.png");
 }
 
 tw-story[tags~="S#B2"]
@@ -382,9 +382,9 @@ tw-story[tags~="S#B18"]
 (click: ?page)[==&#39;&#39;나: &quot;뭔데? 또 엄마 그 사이비 교회 얘기 아니지?&quot;&#39;&#39;</tw-passagedata><tw-passagedata pid="9" name="7" tags="S#3" position="1335,198" size="100,100">&#39;&#39;엄마: &quot;엄마 교회가 왜 사이비야. 다들 얼마나 선하신데.&quot;&#39;&#39;
 (click: ?page)[==&#39;&#39;엄마 : &quot;주님이 우리를 굽어살피시니, 의로운 사람들만 있을 수밖에 없지.&quot;&#39;&#39;
 (click: ?page)[==하... 또 시작이다. 몇 년 전부터 그 놈의 교회. 진짜 교회도 아니면서, 지겹다 정말...</tw-passagedata><tw-passagedata pid="10" name="8" tags="S#3" position="1047,51" size="100,100">&#39;&#39;나: &quot;그럴 줄 알았어... 나 바빠. 모레 진짜 큰 상금이 걸린 공모전이 있어. 준비해야 해&quot;&#39;&#39;
-(click: ?page)[==&#39;&#39;엄마: &quot;이번에는 정말 중요한 이야기야. 정말이야.&quot;&#39;&#39;</tw-passagedata><tw-passagedata pid="11" name="10" tags="S#3 choice" position="695,473" size="100,100">(float-box: &quot;=XXX=&quot;,&quot;====Y=&quot;)+(bg:white)+(b4r:&quot;solid&quot;)+(b4r-colour:black)[하지만 그래봐야 사이비 종교 얘기일텐데… 안 듣느니만 못할 수도 있다.
+(click: ?page)[==&#39;&#39;엄마: &quot;이번에는 정말 중요한 이야기야. 정말이야.&quot;&#39;&#39;</tw-passagedata><tw-passagedata pid="11" name="10" tags="S#3 choice" position="695,472" size="100,100">(float-box: &quot;=XXX=&quot;,&quot;====Y=&quot;)+(bg:white)+(b4r:&quot;solid&quot;)+(b4r-colour:black)[하지만 그래봐야 사이비 종교 얘기일텐데… 안 듣느니만 못할 수도 있다.
 (text-style:&quot;outline&quot;)[[[-&gt; 일단은 피곤하니까 방으로 들어가서 쉰다.-&gt;11]]]
-(text-style:&quot;outline&quot;)[[[-&gt; 속는 셈 치고 엄마 앞에 앉는다.-&gt;21]]]]</tw-passagedata><tw-passagedata pid="12" name="11" tags="S#4.1" position="527,587" size="100,100">&#39;&#39;나 : “됐어. 보나마나 또 이상한 얘기겠지. 나 피곤해. 먼저 잘게.”&#39;&#39;
+(text-style:&quot;outline&quot;)[[[-&gt; 속는 셈 치고 엄마 앞에 앉는다.-&gt;21]]]]</tw-passagedata><tw-passagedata pid="12" name="11" tags="S#4.1" position="524,587" size="100,100">&#39;&#39;나 : “됐어. 보나마나 또 이상한 얘기겠지. 나 피곤해. 먼저 잘게.”&#39;&#39;
 (click: ?page)[==&#39;&#39;엄마 : “딸! 잠깐이면 돼! 이번이…”&#39;&#39;
 (click: ?page)[==(text-style:&quot;italic&quot;,&quot;shudder&quot;)[(track: &#39;door_slam&#39;, &#39;play&#39;)(쾅)]</tw-passagedata><tw-passagedata pid="13" name="21" tags="S#4.2" position="1125,454" size="100,100"> &#39;&#39;나 : “알았어. 한 번 얘기해 봐.”&#39;&#39;
  </tw-passagedata><tw-passagedata pid="14" name="12" tags="S#4.1.2" position="639,589" size="100,100"> 방에 들어오자마자 지친 몸을 침대에 엎어뜨렸다. 
@@ -412,7 +412,7 @@ tw-story[tags~="S#B18"]
  </tw-passagedata><tw-passagedata pid="21" name="19" tags="S#4.1.6" position="525,830" size="100,100"> &#39;&#39;엄마: &quot;네 교주님. 딸이 말을 안 듣네요... 뭐 다른 방법은 없을까요...?&quot;&#39;&#39;
 (click: ?page)[==&#39;&#39;엄마: &quot;꼭 해야 하는데...&quot;&#39;&#39;
 (click: ?page)[==저게 무슨 말이지? 분명 무슨 일이 있는 것 같긴 한데… 
- </tw-passagedata><tw-passagedata pid="22" name="20" tags="S#4.1.6" position="643,828" size="100,100">(float-box: &quot;=XXX=&quot;,&quot;====Y=&quot;)+(bg:white)+(b4r:&quot;solid&quot;)+(b4r-colour:black)[… …  
+ </tw-passagedata><tw-passagedata pid="22" name="20" tags="S#4.1.6" position="596,800" size="100,100">(float-box: &quot;=XXX=&quot;,&quot;====Y=&quot;)+(bg:white)+(b4r:&quot;solid&quot;)+(b4r-colour:black)[… …  
 (click: ?page)[==뭐 어때. 계속 신경쓰기에는 너무 피곤하다.
 (click: ?page)[==잠이나 자자. 내일 또 알바가 있으니까. 
 (click: ?page)[(goto: &quot;33&quot;)]]</tw-passagedata><tw-passagedata pid="23" name="22" tags="S#4.2.2" position="1232,453" size="100,100"> (text-style:&quot;bold&quot;)[엄마: &quot;이틀 뒤에 엄마 교회에서 정말 중요한 행사가 있어. 이건 너에게도 엄마에게도 너무 중요해.&quot;]
@@ -428,7 +428,7 @@ tw-story[tags~="S#B18"]
 (click: ?page)[==&#39;&#39;나: &quot;됐다... 엄마랑 대화를 시도한 내 잘못이지.&quot;&#39;&#39;
 (click: ?page)[==더는 그 자리에 있기가 싫어 뛰쳐나가듯 내 방으로 들어갔다. 
  </tw-passagedata><tw-passagedata pid="27" name="26" tags="S#4.2.2" position="1785,507" size="100,100"> (text-style:&quot;bold&quot;)[엄마 : “딸! 엄마 말 좀 들어! 이번이…”]
-(click: ?page)[==(text-style:&quot;italic&quot;,&quot;shudder&quot;)[(쾅)]
+(click: ?page)[==(text-style:&quot;italic&quot;,&quot;shudder&quot;)[(track: &#39;door_slam&#39;, &#39;play&#39;)(쾅)]
  </tw-passagedata><tw-passagedata pid="28" name="27" tags="S#4.2.3" position="1345,569" size="100,100"> 방에 들어오자마자 지친 몸을 침대에 엎어뜨렸다. 
 (click: ?page)[==알바 때문에 몸이 힘들고, 엄마 때문에 정신이 힘들다. 
  </tw-passagedata><tw-passagedata pid="29" name="28" tags="S#4.2.4" position="1463,571" size="100,100"> 몇 년 전부터, 엄마는 사이비 종교에 빠졌다. 처음에는 그냥 자주 가는 친목 모임이 생긴 줄 알았다. 
@@ -508,10 +508,10 @@ tw-story[tags~="S#B18"]
  </tw-passagedata><tw-passagedata pid="54" name="53" tags="S#9" position="1281,1427" size="100,100"> 하지만 가장 이해가 되지 않는 것은 이 돈을 교주에게 보낸 엄마다.  
 (click: ?page)[==그건 내가 뼈 빠지게 알바해서 번 돈이다. 조금씩 잘 갚아나가고 있다 생각했는데, 그 돈을 어떻게... 
 (click: ?page)[==&#39;&#39;나 : &quot;...안되겠어. 이건 당장 가서 따져봐야겠어.&quot;&#39;&#39;
- </tw-passagedata><tw-passagedata pid="55" name="54" tags="S#10" position="1262,1235" size="100,100"> 엄마의 방문은 살짝 열려있었다. 눈을 감고 무릎을 꿇은 채 기도하고 있었다. 
+ </tw-passagedata><tw-passagedata pid="55" name="54" tags="S#10" position="1262,1271" size="100,100"> 엄마의 방문은 살짝 열려있었다. 눈을 감고 무릎을 꿇은 채 기도하고 있었다. 
 (click: ?page)[==기도에 얼마나 심취했으면 내가 밖에서 부스럭거리는 소리도 못 들었나 보다. 
 (click: ?page)[==&#39;&#39;나 : &quot;엄ㅁ...&quot;&#39;&#39;
-(text-style:&quot;rumble&quot;)[(따르르르르릉)]
+(text-style:&quot;rumble&quot;)[(track: &#39;call-ringing&#39;, &#39;play&#39;)(따르르르르릉)]
  </tw-passagedata><tw-passagedata pid="56" name="55" tags="S#11" position="924,1592" size="100,100"> 들어가려던 찰나에, 엄마 핸드폰으로 전화가 왔다. 나는 황급히 문으로부터 떨어져서 벽에 바짝 붙었다. 
 (click: ?page)[==사이비 종교와 관련된 사람의 전화라면, 엿들어서 뭐라도 알아내야 했다. 
 (click: ?page)[==&#39;&#39;엄마: &quot;네네 교주님.&quot;&#39;&#39;
@@ -530,19 +530,19 @@ tw-story[tags~="S#B18"]
  </tw-passagedata><tw-passagedata pid="61" name="60" tags="S#11" position="1523,1593" size="100,100"> 채무라는 족쇄가 주는 압박은 나보다 엄마가 더 잘 알 터였다. 내가 기억하지 못하는 시절부터 있던 빚이니까. 
 (click: ?page)[==도대체 무슨 생각으로 이런 일을 벌인 건지 모르겠다. 
 (click: ?page)[==엄마에겐 가난이 아무것도 아니었나? 빚도 그냥 익숙한 무언가였나? 
- </tw-passagedata><tw-passagedata pid="62" name="61" tags="S#11 choice" position="1642,1596" size="100,100">(float-box: &quot;=XXX=&quot;,&quot;====Y=&quot;)+(bg:white)+(b4r:&quot;solid&quot;)+(b4r-colour:black)[생각을 하면 할수록 속에서 울컥 서러움이 밀려왔다. 
+ </tw-passagedata><tw-passagedata pid="62" name="61" tags="S#11 choice" position="1642,1596" size="100,100">생각을 하면 할수록 속에서 울컥 서러움이 밀려왔다. 
 (text-style:&quot;outline&quot;)[[[-&gt; 화를 참지 않는다. 지금 이 감정을 당장 표현한다.-&gt;100]]]
-(text-style:&quot;outline&quot;)[[[-&gt; 화를 참는다. 마음을 가다듬고 엄마와 담판을 짓는다.-&gt;1000]]]]</tw-passagedata><tw-passagedata pid="63" name="100" tags="S#A1" position="1638,1735" size="100,100"> 이젠 됐다. 충분히 많이 참아왔다. 
+(text-style:&quot;outline&quot;)[[[-&gt; 화를 참는다. 마음을 가다듬고 엄마와 담판을 짓는다.-&gt;1000]]]</tw-passagedata><tw-passagedata pid="63" name="100" tags="S#A1" position="1638,1736" size="100,100"> 이젠 됐다. 충분히 많이 참아왔다. 
 (click: ?page)[==매일같이 엄마가 하는 종교 얘기를 귓등으로 듣는 것도, 어차피 소용없을 거라 생각한다. 
 (click: ?page)[==저 흉물스러운 조각상과 역겨운 교주의 사진을 그대로 놔두는 것도 더 이상은 견딜 수 없다. 
-(text-style:&quot;rumble&quot;)[(쾅)]
+(text-style:&quot;rumble&quot;)[(track: &#39;door_slam&#39;, &#39;play&#39;)(쾅)]
  </tw-passagedata><tw-passagedata pid="64" name="101" tags="S#A2" position="995,1636" size="100,100"> 문을 박차고 들어가자, 엄마는 황급히 핸드폰을 뒤로 숨기며 당황한 표정으로 나를 바라보았다. 
 (click: ?page)[==(text-style:&quot;shudder&quot;)[&#39;&#39;엄마 : &quot;아... 따... 딸! 언제부터 거기...&quot; &#39;&#39;]
 (click: ?page)[==엄마의 말이 채 다 끝나기도 전에 나는 엄마를 지나쳐 조각상들을 전부 넘어뜨렸다. 
  </tw-passagedata><tw-passagedata pid="65" name="102" tags="S#A2" position="1026,1856" size="100,100"> &#39;&#39;엄마 : &quot;딸! 지금 뭐하는...!&quot;&#39;&#39;
 (click: ?page)[==흥분한 나는 대꾸도 없이 벽에 걸린 교주 액자를 손에 들었다. 
 (click: ?page)[==그리고는 온 힘을 다해 바닥에 내던졌다. 
- </tw-passagedata><tw-passagedata pid="66" name="103" tags="S#A2" position="1146,1857" size="100,100"> (text-style:&quot;rumble&quot;)[(쨍그랑)]
+ </tw-passagedata><tw-passagedata pid="66" name="103" tags="S#A2" position="1146,1857" size="100,100"> (text-style:&quot;rumble&quot;)[(track: &#39;glass&#39;, &#39;play&#39;) (쨍그랑)]
 (click: ?page)[==엄마 : &quot;안돼!!!&quot;
 (click: ?page)[==유리 조각들이 흩어진 위로 교주의 사진은 엎어졌다. 다른 한 쪽에서는 부서진 조각상들이 나뒹굴고 있었다. 
  </tw-passagedata><tw-passagedata pid="67" name="104" tags="S#A2" position="1266,1856" size="100,100"> 한바탕 하고 나니  숨이 거칠어졌다. 
@@ -565,8 +565,8 @@ tw-story[tags~="S#B18"]
  </tw-passagedata><tw-passagedata pid="73" name="110" tags="S#A3" position="989,2014" size="100,100"> (text-style:&quot;sway&quot;)[&#39;&#39;나 : &quot;어디서부터 잘못된 거지...?&quot; &#39;&#39;]
 (click: ?page)[==(text-style:&quot;sway&quot;)[&#39;&#39;나 : &quot;다른 돈들도 썼는지 다시 추궁해야 하나?&quot; &#39;&#39;]
 (click: ?page)[==(text-style:&quot;sway&quot;)[&#39;&#39;나 : &quot;그 동안의 내 노력은 다 물거품이 된건가...?&quot; &#39;&#39;]
- </tw-passagedata><tw-passagedata pid="74" name="111" tags="S#A3" position="1108,2014" size="100,100"> &#39;&#39;나 : &quot;나 정말 열심히 살았는데... 나는... 엄마는 왜... &quot;&#39;&#39;
-(click: ?page)[==(text-style:&quot;shudder&quot;)[(쨍그랑)]
+ </tw-passagedata><tw-passagedata pid="74" name="111" tags="S#A3" position="1109,1979" size="100,100"> &#39;&#39;나 : &quot;나 정말 열심히 살았는데... 나는... 엄마는 왜... &quot;&#39;&#39;
+(click: ?page)[==(text-style:&quot;shudder&quot;)[(track: &#39;glass&#39;, &#39;play&#39;) (쨍그랑)]
 (click: ?page)[==&#39;&#39;사장님: &quot;이게 무슨 소리야! 너 괜찮니? 안 다쳤어?&quot;&#39;&#39;
  </tw-passagedata><tw-passagedata pid="75" name="112" tags="S#A3" position="1228,2014" size="100,100"> &#39;&#39;나: &quot;아, 죄...죄송합니다!  잠깐 다른 생각을 하다가..&quot;&#39;&#39;
 (click: ?page)[==정신을 차리고 아래를 내려다보니, 날카로운 접시 조각들이 발치에 흩어져있었다. 
@@ -589,10 +589,10 @@ tw-story[tags~="S#B18"]
 (click: ?page)[==&#39;&#39;나 : &quot;엄마랑 싸우느라 너무 기운을 많이 썼나... 피곤하네.&quot; &#39;&#39;
  </tw-passagedata><tw-passagedata pid="81" name="118" tags="S#A4" position="1565,2208" size="100,100"> 금방 몸이 노곤해졌다. 알바를 할 때는 그렇게나 많았던 생각들이, 잠을 잘 때가 되니까 전부 희미해졌다. 
 (click: ?page)[==그렇게 의식도 희미해지면서, 얼마 되지 않아 잠에 빠져들었다. 
- </tw-passagedata><tw-passagedata pid="82" name="1000" tags="S#B" position="2031,1733" size="100,100"> &#39;&#39;엄마: &quot;네네 교주님 그러면 곧 뵐게요. 들어가세요.&quot;&#39;&#39;
+ </tw-passagedata><tw-passagedata pid="82" name="1000" tags="S#B" position="2031,1734" size="100,100"> &#39;&#39;엄마: &quot;네네 교주님 그러면 곧 뵐게요. 들어가세요.&quot;&#39;&#39;
 (click: ?page)[==(뚝)
 (click: ?page)[==엄마의 전화가 끝날 때까지 기다리면서 마음이 차갑게 식었다. 
- </tw-passagedata><tw-passagedata pid="83" name="119" tags="S#A5" position="285,2779" size="100,100"> //(text-colour:grey)[으으음... 뭐지?]//
+</tw-passagedata><tw-passagedata pid="83" name="119" tags="S#A5" position="285,2779" size="100,100"> //(text-colour:grey)[으으음... 뭐지?]//
 (click: ?page)[==무언가 익숙한 기분이 들었다. 조금 흐릿한 시야, 또렷한 의식, 나오지 않는 목소리. 
 (click: ?page)[==어제 꿨던 꿈과 같은 상황이다. 
  </tw-passagedata><tw-passagedata pid="84" name="120" tags="S#A5" position="528,2560" size="100,100"> //(text-colour:grey)[설마, 이것도 꿈인가?]//
@@ -609,8 +609,8 @@ tw-story[tags~="S#B18"]
  </tw-passagedata><tw-passagedata pid="88" name="124" tags="S#A5" position="1361,2329" size="100,100"> 이 날 일찍 오겠노라 했던 엄마는 늦은 밤이 돼서야 돌아왔고, 나는 혼자서 쓸쓸하게 생일날을 보냈다. 
 (click: ?page)[==//(text-colour:grey)[엄마... ]//
 (click: ?page)[==//(text-colour:grey)[대체 왜 그랬어? 그 놈의 종교가 뭐길래! 자식 생일보다 그 놈의 종교가 더 중요했어?]//
- </tw-passagedata><tw-passagedata pid="89" name="125" tags="S#A5" position="1482,2329" size="100,100"> 닿지 않는다는 걸 알면서도, 멀어지는 엄마의 뒷모습에 소리칠 수 밖에 없었다. 
-(click: ?page)[==(text-style:&quot;shudder&quot;)[(쾅) ]
+ </tw-passagedata><tw-passagedata pid="89" name="125" tags="S#A5" position="1483,2329" size="100,100"> 닿지 않는다는 걸 알면서도, 멀어지는 엄마의 뒷모습에 소리칠 수 밖에 없었다. 
+(click: ?page)[==(text-style:&quot;shudder&quot;)[(track:&#39;door_slam&#39;, &#39;play&#39;)(쾅)]
 (click: ?page)[==야속하게 문은 닫히고, 홀로 남겨진 고등학생은 한숨을 내쉰 뒤 공부를 다시 시작한다.
  </tw-passagedata><tw-passagedata pid="90" name="126" tags="S#A5" position="1601,2330" size="100,100"> 그 모습을 보고있자니 눈물이 흘렀다. 꿈이니까 진짜 눈물은 아니겠지만, 적어도 그렇다고 느꼈다.
 (click: ?page)[==이윽고 시야가 눈물에 점점 더 흐려졌다... ... 
@@ -661,22 +661,26 @@ tw-story[tags~="S#B18"]
 (click: ?page)[==상금은 엄마가 헌금으로 갖다바친 돈을 매꾸고도 남을 금액이다. 그리고 우승 가능성도 높다.  
  </tw-passagedata><tw-passagedata pid="106" name="142" tags="S#A9" position="1535,3171" size="100,100"> (text-style:&quot;fade-in-out&quot;)[(띠링)] 
 알림 소리가 울려서 핸드폰을 열어보았다. 모르는 번호로 온 메세지였다.  
-(click: ?page)[== (text-colour:white)+(bg:black)[『이신애 씨 따님 되시죠?]
- </tw-passagedata><tw-passagedata pid="107" name="143" tags="S#A9" position="1654,3171" size="100,100"> (text-colour:white)+(bg:black)[어머니가 지금 몇달째 돈을 안보내주시네요~ 연락도 잘 안되시더라구요 ㅎㅎ』]
-(click: ?page)[==(text-colour:white)+(bg:black)[『저번에 한번 경험해보셔서 아시죠? 저희 그렇게 나이스한 사람들 아닙니다 ^^]
-(click: ?page)[==(text-colour:white)+(bg:black)[이틀안에 입금 안되면 바로 찾아갑니다.』]
- </tw-passagedata><tw-passagedata pid="108" name="144" tags="S#A9" position="1774,3171" size="100,100">(text-colour:white)+(bg:black)[『K빌라 301호, S대학 경영학과, G편의점. 정확한 장소랑 시간까지 다 알고 있어요.]
-(click: ?page)[==(text-colour:white)+(bg:black)[따님뿐만 아니라 어머니도 위험해질 수 있다는 거 아시죠?』]
-(click: ?page)[==(text-colour:white)+(bg:black)[『며칠 안에 따님 선에서 해결해주세요~ 』]
+(click: ?page)[== (text-colour:#f06595)[『이신애 씨 따님 되시죠?]
+ </tw-passagedata><tw-passagedata pid="107" name="143" tags="S#A9" position="1660,3168" size="100,100"> (text-colour:#f06595)[어머니가 지금 몇달째 돈을 안보내주시네요~ 연락도 잘 안되시더라구요 ㅎㅎ』]
+(click: ?page)[==(text-colour:#f06595)[『저번에 한번 경험해보셔서 아시죠? 저희 그렇게 나이스한 사람들 아닙니다 ^^]
+(click: ?page)[==(text-colour:#f06595)[이틀안에 입금 안되면 바로 찾아갑니다.』]
+ </tw-passagedata><tw-passagedata pid="108" name="144" tags="S#A9" position="1774,3171" size="100,100">(text-colour:#f06595)[『K빌라 301호, S대학 경영학과, G편의점. 정확한 장소랑 시간까지 다 알고 있어요.]
+(click: ?page)[==(text-colour:#f06595)[따님뿐만 아니라 어머니도 위험해질 수 있다는 거 아시죠?』]
+(click: ?page)[==(text-colour:#f06595)[『며칠 안에 따님 선에서 해결해주세요~ 』]
  </tw-passagedata><tw-passagedata pid="109" name="145" tags="S#A9" position="1894,3172" size="100,100"> 아, 결국 나한테 연락이 왔구나. 예상 못했던 건 아니지만... 이런 타이밍에 오다니. 
 (click: ?page)[==300만원. 두 달 치 알바비인데다가 원래 내야하는 돈까지 생각해서 그런 큰 돈을 마련하려면, 그저 눈 앞이 깜깜해진다.  
 (click: ?page)[==&#39;&#39;엄마: &quot;딸, 얼른 나와.&quot;&#39;&#39;
- </tw-passagedata><tw-passagedata pid="110" name="146" tags="S#A9 choice" position="2016,3172" size="100,100">(float-box: &quot;=XXX=&quot;,&quot;====Y=&quot;)+(bg:white)+(b4r:&quot;solid&quot;)+(b4r-colour:black)[하지만 밖에는 엄마가 기다리고 있다. 
+ </tw-passagedata><tw-passagedata pid="110" name="146" tags="S#A9 choice" position="2016,3171" size="100,100">하지만 밖에는 엄마가 기다리고 있다. 
 (text-style:&quot;outline&quot;)[[[-&gt; 엄마를 위해 돈을 벌어야 한다.-&gt;300]]]
-(text-style:&quot;outline&quot;)[[[-&gt; 엄마를 위해 함께 시간을 보낸다.-&gt;500]]]]</tw-passagedata><tw-passagedata pid="111" name="300" tags="" position="2200,3363" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="112" name="500" tags="" position="1711,3368" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="113" name="9" tags="S#3" position="578,434" size="100,100">&#39;&#39;엄마: &quot;딸, 엄마 부탁 한번만 들어줘. 크리스마스 선물이라고 생각하고 한번만.. 이번 한번만.. &quot;&#39;&#39;
+(text-style:&quot;outline&quot;)[[[-&gt; 엄마를 위해 함께 시간을 보낸다.-&gt;500]]]</tw-passagedata><tw-passagedata pid="111" name="300" tags="S#E1" position="2201,3364" size="100,100">오랫동안 준비해온 공모전이다. 더군다나 독촉 문자까지 온 상황에서 이것저것 가릴 수는 없다. (click: ?page)[==일단은 뚫려있는 구멍부터 메워야한다. 
+(click: ?page)[==엄마의 상태가 조금 신경쓰이기는 하지만, 나라도 정신을 차려서 이 상황을 수습해야 한다.  </tw-passagedata><tw-passagedata pid="112" name="500" tags="S#A10" position="1416,3431" size="100,100">열심히 준비한 공모전이다. 상금이 당장 필요한 것도 사실이다. 
+(click: ?page)[==하지만... 엄마가 신경쓰인다. 게다가 오늘 있다는 행사도 보통 행사는 아닌 것 같다. 
+(click: ?page)[==&#39;&#39;나 : &quot;알았어 엄마. 이번 한 번만 따라갈게&quot;&#39;&#39;</tw-passagedata><tw-passagedata pid="113" name="9" tags="S#3" position="578,434" size="100,100">&#39;&#39;엄마: &quot;딸, 엄마 부탁 한번만 들어줘. 크리스마스 선물이라고 생각하고 한번만.. 이번 한번만.. &quot;&#39;&#39;
 (click: ?page)[==저렇게까지 애원하는 엄마의 모습은 처음이긴 하다.  </tw-passagedata><tw-passagedata pid="114" name="hal.tracks" tags="" position="1569,162" size="100,100">call_end: ./resource/call_end.wav
 call_ringing: ./resource/call_ringing.wav
 door_slam: ./resource/door_slam.wav
+door_squeak: ./resource/door_squeak.wav
 glass: ./resource/glass.wav</tw-passagedata><tw-passagedata pid="115" name="1001" tags="S#B" position="414,317" size="100,100">지금이라면 충분히 이성적으로 대화할 수 있을 것 같았다.
 (click: ?page)[==엄마와 내가 오랫동안 이어온 이 지긋지긋한 악순환을 오늘은 마쳐보려고 한다.
 (click: ?page)[==&#39;&#39;나 : &quot;엄마. 나랑 얘기 좀 해.&quot;&#39;&#39;
@@ -736,7 +740,7 @@ glass: ./resource/glass.wav</tw-passagedata><tw-passagedata pid="115" name="1001
 </tw-passagedata><tw-passagedata pid="134" name="1020" tags="S#B3" position="0,710" size="100,100">아빠가 돌아가신 이후로 엄마는 내가 외박하는 것을 극도로 싫어했다. 외박하고 난 다음 날이면 엄마는 불안한 모습을 보였다.
 (click: ?page)[==그래서 그 이후론 아무리 늦더라도 잠은 꼬박 꼬박 집에 들어와서 잤다.
 (click: ?page)[==하지만 이대로 집에 들어가면 또 엄마와 마주치고, 싸우게 될 것이 분명하다.
-</tw-passagedata><tw-passagedata pid="135" name="1021" tags="S#B3 choice" position="105,715" size="100,100">또다시 그 악순환을 반복하기엔 너무 지쳐버렸다.
+</tw-passagedata><tw-passagedata pid="135" name="1021" tags="S#B3 choice" position="51,784" size="100,100">또다시 그 악순환을 반복하기엔 너무 지쳐버렸다.
 (text-style:&quot;outline&quot;)[[[-&gt; 집에 가지 않는다.-&gt;50000]]]
 (text-style:&quot;outline&quot;)[[[-&gt; 집에 간다.-&gt;1022]]]</tw-passagedata><tw-passagedata pid="136" name="1022" tags="S#B5" position="180,715" size="100,100">&#39;&#39;나 : &quot;그래 아무리 엄마가 싫어도 집에는 들어가야해.&quot; &#39;&#39;
 (click: ?page)[==&#39;&#39;나 : &quot;엄마는 혼자 있는 걸 지독히도 싫어하잖아.. 아빠도 없는 상황에서 나라도 엄마랑 함께 해야지.&quot;&#39;&#39;
@@ -771,7 +775,7 @@ glass: ./resource/glass.wav</tw-passagedata><tw-passagedata pid="115" name="1001
 </tw-passagedata><tw-passagedata pid="146" name="1032" tags="S#B7" position="1014,697" size="100,100">&#39;&#39;엄마: &quot;어우 안돼요.. 제 딸이 고3이라 챙겨줘야하기도 하고.. &quot; &#39;&#39;
 (click: ?page)[==그래. 이 때 나는 고3이었지. 엄마가 이 시기에 종교에 빠진 탓에, 나는 험난한 수험생활을 홀로 견뎌야했다.
 (click: ?page)[==&#39;&#39;교인1: &quot;새벽에 나왔다가 딸 깨기 전에 들어가면 되지~ 다들 신애씨 기다릴걸?&quot;&#39;&#39;
-</tw-passagedata><tw-passagedata pid="147" name="50000" tags="S#B4" position="142,553" size="100,100">&#39;&#39;나 : &quot;그래 오늘은 집에 안들어갈래. 이렇게 집에 들어가면 엄마는 화해하자는 의미로 이해할거야.&quot; &#39;&#39;
+</tw-passagedata><tw-passagedata pid="147" name="50000" tags="S#B4" position="142,553" size="100,100">(float-box: &quot;=XXX=&quot;,&quot;====Y=&quot;)+(bg:white)+(b4r:&quot;solid&quot;)+(b4r-colour:black)[&#39;&#39;나 : &quot;그래. 오늘은 집에 안 들어갈래. 이렇게 집에 들어가면 엄마는 화해하자는 의미로 이해할거야.&quot; &#39;&#39;
 (click: ?page)[==&#39;&#39;나 : &quot;그러면 교회에 같이 가줄 거라고 착각하겠지. 더 이상 그럴 수는 없어.&quot; &#39;&#39;
 (click: ?page)[==나는 대충 짐을 챙겨서 찜질방으로 향했다. 엄마에게 더 이상 타협은 없다는 확실한 신호를 보내기로 한다.
 (click: ?page)[(goto: &quot;117&quot;)]]</tw-passagedata><tw-passagedata pid="148" name="1033" tags="S#B7" position="1580,623" size="100,100">&#39;&#39;엄마: &quot;안되는데...&quot;&#39;&#39;
@@ -791,7 +795,7 @@ glass: ./resource/glass.wav</tw-passagedata><tw-passagedata pid="115" name="1001
 (click: ?page)[==(text-colour:grey)[//안돼 엄마!! 그 사람들 따라가지 마!!! //]
 (click: ?page)[==...
 하지만 내게 엄마를 붙잡을 자격이 있을까?
-</tw-passagedata><tw-passagedata pid="153" name="1038" tags="S#B8" position="716,811" size="100,100">&#39;&#39;나 &quot;...안돼!!&quot;&#39;&#39;
+</tw-passagedata><tw-passagedata pid="153" name="1038" tags="S#B8" position="716,801" size="100,100">&#39;&#39;나 &quot;...안돼!!&quot;&#39;&#39;
 (click: ?page)[==(text-style:&quot;shudder&quot;)[&#39;&#39;나 : &quot;안돼!!&quot;&#39;&#39;]
 (click: ?page)[==꿈에서 못 다 내뱉은 소리가 입에서 터져나왔다. 땀을 닦고 숨을 고르고 나니 이제야 진정이 좀 된다.
 </tw-passagedata><tw-passagedata pid="154" name="1039" tags="S#B8" position="836,810" size="100,100">어제부터 자꾸 기이한 꿈을 꾼다. 꿈에서는 내가 알지 못했던 엄마의 모습이 보인다.
@@ -899,8 +903,8 @@ glass: ./resource/glass.wav</tw-passagedata><tw-passagedata pid="115" name="1001
 </tw-passagedata><tw-passagedata pid="188" name="1073" tags="S#B11" position="773,1272" size="100,100">게다가 취업에도 큰 도움이 될 것이다.
 (click: ?page)[==취업에 성공해 꾸준히 돈을 벌 수만 있다면...
 (click: ?page)[==그렇다면 엄마와 나는 정말 이 오랜 고난에서 헤어나올 수 있을 것이다.
-</tw-passagedata><tw-passagedata pid="189" name="1074" tags="S#B11 choice" position="800,1392" size="100,100">(text-style:&quot;outline&quot;)[[[-&gt; 내일의 엄마를 위해 내가 성공해야한다.-&gt;1075]]]
-(text-style:&quot;outline&quot;)[[[-&gt; 오늘의 엄마를 지금 당장 찾아야한다.-&gt;3000]]]</tw-passagedata><tw-passagedata pid="190" name="1075" tags="S#B12" position="641,1522" size="100,100">&#39;&#39;나: &quot;그래 설마 엄마한테 별 일이야 있겠어?&quot;
+</tw-passagedata><tw-passagedata pid="189" name="1074" tags="S#B11 choice" position="800,1392" size="100,100">(text-style:&quot;outline&quot;)[[[-&gt; 내일의 엄마를 위해 내가 성공해야 한다.-&gt;1075]]]
+(text-style:&quot;outline&quot;)[[[-&gt; 오늘의 엄마를 지금 당장 찾아야 한다.-&gt;3000]]]</tw-passagedata><tw-passagedata pid="190" name="1075" tags="S#B12" position="641,1522" size="100,100">&#39;&#39;나: &quot;그래 설마 엄마한테 별 일이야 있겠어?&quot;
 (click: ?page)[==나: &quot;지금 당장 빚을 안갚으면 채권자가 찾아올거고, 우리는 얼마 버티지도 못할거야.&quot;&#39;&#39;
 (click: ?page)[==엄마랑 원만한 관계를 유지하는 것도 물론 중요하다. 다른 집처럼 엄마를 대화하고, 이해할 수 있으면 물론 좋을 것이다. </tw-passagedata><tw-passagedata pid="191" name="1076" tags="S#B12" position="761,1522" size="100,100">근데 내 눈 앞에 닥친 현실이 너무 버겁다.
 (click: ?page)[==현실이 목끝까지 나를 쫓아오고 있는데, 여유롭게 앉아 내 말은 듣지도 않는 엄마와 대화를 하고 있을 수는 없다.
@@ -912,7 +916,7 @@ glass: ./resource/glass.wav</tw-passagedata><tw-passagedata pid="115" name="1001
 (click: ?page)[==준비해간 내용을 화려한 쇼맨십과 함께 모두 전달했다.
 (click: ?page)[==신이 도왔는지 호평뿐이었고, 결국 나는 대상을 수상했다. 상금이 무려 세 달 치 월급이랑 맞먹는다. </tw-passagedata><tw-passagedata pid="195" name="1079" tags="S#E4" position="1677,1353" size="100,100">&#39;&#39;나 : &quot;정말... 정말 다행이다... 이걸로 구멍난 건 충분히 메꿀 수 있겠다!&quot;&#39;&#39;
 (click: ?page)[==상금은 빠른 시일 내로 지급된다고 한다. 되는 대로 밀린 빚을 먼저 갚고, 남은 건 이번 달치 상환에 보태면 될 것이다.
-(click: ?page)[==&#39;&#39;나 : &quot;일단은 이 좋은 소식을 엄마한테 전하고, 채권자한테도 돈 준비될 거라 연락을...&quot;&#39;&#39;</tw-passagedata><tw-passagedata pid="196" name="1080" tags="S#E4" position="1921,1221" size="100,100">(text-style:&quot;shudder&quot;)[(따르르르릉) ]
+(click: ?page)[==&#39;&#39;나 : &quot;일단은 이 좋은 소식을 엄마한테 전하고, 채권자한테도 돈 준비될 거라 연락을...&quot;&#39;&#39;</tw-passagedata><tw-passagedata pid="196" name="1080" tags="S#E4" position="1921,1221" size="100,100">(text-style:&quot;shudder&quot;)[(track: &#39;call-ringing&#39;, &#39;play&#39;)(따르르르릉) ]
 (click: ?page)[==핸드폰을 꺼내 엄마에게 전화하려던 순간, 모르는 번호로부터 전화가 왔다.
 (click: ?page)[==채권자는 아니었다.</tw-passagedata><tw-passagedata pid="197" name="1081" tags="S#E4" position="1917,1351" size="100,100">(text-colour:grey)[//&quot;우리는 결국 구원받을거야 딸. 곧 불빛이 내려올 거야.&quot;//]
 (click: ?page)[==왜인지는 모르겠지만, 순간 어제 엄마가 했던 말이 다시 떠올랐다.
@@ -940,9 +944,9 @@ glass: ./resource/glass.wav</tw-passagedata><tw-passagedata pid="115" name="1001
 (click: ?page)[==정신과에서는 치료가 시급하다고 했으나, 지금의 병원비만 해도 너무 벅찼다.
 (click: ?page)[==그런 엄마를 보며 나도 버틸 여력이 점점 말라갔다. 병원비, 생활비, 빚을 모두 내기 위해 잠을 줄였다. </tw-passagedata><tw-passagedata pid="209" name="1092" tags="S#E4.1" position="2262,1472" size="100,100">당장 하루 벌어 하루 살기 바빠 복학할 엄두도 나지 않는다.
 (click: ?page)[==세상 사람 모두가 앞으로 나아가는데 나와 엄마만 정체되어 있는 느낌이다. 고여있으니 하루하루 뿌리가 썩고있다는 기분이 든다.
-(click: ?page)[==&#39;&#39;나: &quot;우리에게 언젠가 희망이 생기긴 할까...?&quot;&#39;&#39;</tw-passagedata><tw-passagedata pid="210" name="1093" tags="S#E4.1" position="2382,1470" size="100,100">&#39;&#39;엄마: &quot;언젠가... 언젠가 다시 불빛이 내려올거야...&quot;&#39;&#39;
+(click: ?page)[==&#39;&#39;나: &quot;우리에게 언젠가 희망이 생기긴 할까...?&quot;&#39;&#39;</tw-passagedata><tw-passagedata pid="210" name="1093" tags="S#E4.1" position="2379,1482" size="100,100">&#39;&#39;엄마: &quot;언젠가... 언젠가 다시 불빛이 내려올거야...&quot;&#39;&#39;
 (click: ?page)[==바로 옆에 엄마가 앉아있지만, 누구보다도 멀리 있는 것만 같다.
-(click: ?page)[==&#39;&#39;The End.&#39;&#39;</tw-passagedata><tw-passagedata pid="211" name="3002" tags="S#B14" position="164,1642" size="100,100">엄마의 교회로 향하는 버스를 탔다.
+(click: ?page)[==(text-style:&quot;shadow&quot;)[[[The end-&gt;end]]]</tw-passagedata><tw-passagedata pid="211" name="3002" tags="S#B14" position="164,1642" size="100,100">엄마의 교회로 향하는 버스를 탔다.
 (click: ?page)[==한 번도 가본적은 없지만 예전에 엄마 방에서 얼핏 주소를 봤던 기억을 되살렸다.
 (click: ?page)[==엄마의 방을 다 뒤집어 엎어서 겨우 교회 주보를 찾을 수 있었다. 주보에 나와있는 주소로 향했다. </tw-passagedata><tw-passagedata pid="212" name="3003" tags="S#B14" position="282,1642" size="100,100">&#39;&#39;나: &quot;엄마는 항상 이 길을 혼자 다녔던 걸까?&quot;
 (click: ?page)[==나: &quot;매일 이 길을 오고 가면서 무슨 생각을 했을까?&quot;&#39;&#39;
@@ -957,7 +961,7 @@ glass: ./resource/glass.wav</tw-passagedata><tw-passagedata pid="115" name="1001
 (click: ?page)[==그리고 며칠동안 겪었던 익숙한 느낌이 몰려왔다. </tw-passagedata><tw-passagedata pid="217" name="3008" tags="S#B16" position="166,1758" size="100,100">//(text-colour:grey)[아, 이건 꿈이다.]//
 (click: ?page)[==마치 현실처럼 생생한 기분. 나오지 않는 목소리. 이제는 알겠다. 이게 꿈이라는 걸.
 (click: ?page)[==그리고 이번에도 역시 처음 보는 장소였다. </tw-passagedata><tw-passagedata pid="218" name="3009" tags="S#B16" position="284,1758" size="100,100">하지만 거기 있는 사람들은 모두 알 것 같은 사람들이었다.
-(click: ?page)[==//(쨍그랑)//
+(click: ?page)[==//(track: &#39;glass&#39;, &#39;play&#39;) (쨍그랑)//
 (click: ?page)[==&#39;&#39;아빠: &quot;너 애 데리고 어디가!! 당장 여기로 안 와?&quot;&#39;&#39;</tw-passagedata><tw-passagedata pid="219" name="3010" tags="S#B16" position="401,1756" size="100,100">낯선 남자가 깨진 소주병을 들고 엄마를 위협하고 있었다. 지금과는 다른 젊은 엄마다.
 (click: ?page)[==남자는 아마... 아빠일 것이다. 몇 없는 가족사진에서 봤던 아빠의 얼굴과 비슷하다.
 (click: ?page)[==다른 점이 있다면, 지금 이 남자의 얼굴은 만취해서 시뻘겋게 달아올랐다는 것이다. </tw-passagedata><tw-passagedata pid="220" name="3011" tags="S#B16" position="523,1758" size="100,100">(text-colour:grey)[//그렇다면 엄마의 품속에 있는 저 아이는 나인가..? //]
@@ -974,7 +978,7 @@ glass: ./resource/glass.wav</tw-passagedata><tw-passagedata pid="115" name="1001
 (click: ?page)[==아빠는 한손에 술병을 들고 악을 질렀다. 어린 나는 아무 말도 못하고 울며 엄마의 품속에 안겨있었다.
 (click: ?page)[==&#39;&#39;엄마: &quot;뭐든 지금보다는 나을거야... 내 딸만큼은 내가 책임질거야..&quot;&#39;&#39;</tw-passagedata><tw-passagedata pid="226" name="3017" tags="S#B16" position="1241,1756" size="100,100">집을 나서려는 엄마에게 아빠가 술병을 집어 던졌다.
 (click: ?page)[==(text-colour:grey)[//엄마!! 엄마 조심해!! //]
-(click: ?page)[==&#39;&#39;아빠: &quot;어디가!!! 당장 안돌아와? 죽고싶어!!!&quot;&#39;&#39;</tw-passagedata><tw-passagedata pid="227" name="3018" tags="S#B16" position="1361,1755" size="100,100">//(쾅)  (쨍그랑)//
+(click: ?page)[==&#39;&#39;아빠: &quot;어디가!!! 당장 안돌아와? 죽고싶어!!!&quot;&#39;&#39;</tw-passagedata><tw-passagedata pid="227" name="3018" tags="S#B16" position="1361,1755" size="100,100">//(track: &#39;door_slam&#39;, &#39;play&#39;)(쾅)  (track: &#39;glass&#39;, &#39;play&#39;) (쨍그랑)//
 (click: ?page)[==엄마가 닫고 나간 문에 날아간 술병이 부딪혔다.
 (click: ?page)[==깨진 유리조각들을 뒤로한 채 엄마는 나를 꼭 안고 달리고있었다.  </tw-passagedata><tw-passagedata pid="228" name="3019" tags="S#B17" position="169,1871" size="100,100">장면이 바뀌었다. 갓난아기였던 나는 이제 9살 정도 되어보였다.
 (click: ?page)[==엄마가 식당 일을 했던게 어렴풋이 기억이 났다.
@@ -1072,9 +1076,9 @@ glass: ./resource/glass.wav</tw-passagedata><tw-passagedata pid="115" name="1001
 (click: ?page)[==후하.. 참았던 숨이 쏟아져 나왔다. 심장이 빠르게 뛰는 것을 보니 정말 살아있긴 한 것 같다.
 (click: ?page)[==&#39;&#39;나: &quot;직...직전이라는 건...?&quot;&#39;&#39;</tw-passagedata><tw-passagedata pid="276" name="3067" tags="S#E.f.6" position="213,2690" size="100,100">(text-style:&quot;smear&quot;)[&#39;&#39;신: &quot;내가 다시 기회를 줄 수도 있다는 뜻이지. 내가 자넬 아껴서 그동안 기회를 많이 줬거든.&quot;&#39;&#39;]
 (click: ?page)[==기회...? 기회라는 게 무슨 말이지..?
-(click: ?page)[==(text-style:&quot;smear&quot;)[&#39;&#39;신: &quot;그래. 꿈 말이야. 꿈은 재밌게 봤나?&quot;&#39;&#39;]</tw-passagedata><tw-passagedata pid="277" name="3068" tags="S#E.f.6" position="1264,2613" size="100,100">아. 근래에 꾸던 꿈들. 하나같이 또렷하고 생생했지.
+(click: ?page)[==(text-style:&quot;smear&quot;)[&#39;&#39;신: &quot;그래. 꿈 말이야. 꿈은 재밌게 봤나?&quot;&#39;&#39;]</tw-passagedata><tw-passagedata pid="277" name="3068" tags="S#E.f.6" position="1281,2616" size="100,100">아. 근래에 꾸던 꿈들. 하나같이 또렷하고 생생했지.
 (click: ?page)[==그게 설마...?
-(click: ?page)[==&#39;&#39;나: &quot;그럼 요즘 꾸던 그 꿈들이 다 당신이 보여준 거였어요?&quot;&#39;&#39;</tw-passagedata><tw-passagedata pid="278" name="3069" tags="S#E.f.6" position="1399,2612" size="100,100">(text-style:&quot;smear&quot;)[&#39;&#39;신: &quot;그렇지 않고서야, 자네도 모르는 일을 어떻게 꿈으로 꾸겠나?&quot;&#39;&#39;]
+(click: ?page)[==&#39;&#39;나: &quot;그럼 요즘 꾸던 그 꿈들이 다 당신이 보여준 거였어요?&quot;&#39;&#39;</tw-passagedata><tw-passagedata pid="278" name="3069" tags="S#E.f.6" position="1430,2612" size="100,100">(text-style:&quot;smear&quot;)[&#39;&#39;신: &quot;그렇지 않고서야, 자네도 모르는 일을 어떻게 꿈으로 꾸겠나?&quot;&#39;&#39;]
 (click: ?page)[==이제야 최근 나에게 일어났던 이상한 일들이 다 이해가 된다.
 (click: ?page)[==지금의 내가 절대 알 수 없는 것들, 과거의 나와 엄마, 그리고 아빠까지... 그게 전부 이 자의 짓이었다니.</tw-passagedata><tw-passagedata pid="279" name="3070" tags="S#E.f.6" position="1355,2454" size="100,100">(text-style:&quot;smear&quot;)[&#39;&#39;신: &quot;자, 잘 듣게. 이제 정말 집중할 시간이야.&quot;&#39;&#39;]
 (click: ?page)[==(text-style:&quot;smear&quot;)[&#39;&#39;신: &quot;뭐 짐작은 하겠지만, 여긴 시간과 공간 개념이 없는 곳이야.&quot;
@@ -1102,7 +1106,7 @@ glass: ./resource/glass.wav</tw-passagedata><tw-passagedata pid="115" name="1001
 (click: ?page)[==엄마의 오른손에는 라이터가 들려 있다. 엄마의 손을 붙잡았다. 그리고 엄마의 눈을 깊게 쳐다봤다.
 (click: ?page)[==엄마와 나는 그 어디에서도 만나지 못하는 평행선 위에 있었다. </tw-passagedata><tw-passagedata pid="291" name="3082" tags="S#E.f.8" position="1006,2572" size="100,100">하지만 내 평행선은 조금씩 기울어졌고, 마침내 이 곳에서 엄마와 만나게 되었다.
 (click: ?page)[==이 교점에서 나는 내 진심을 전해야한다.
-(click: ?page)[==이번이 마지막이라는 확신이 들었다. 신중해야한다.</tw-passagedata><tw-passagedata pid="292" name="3083" tags="S#E.f.8 choice" position="1127,2575" size="100,100">(text-style:&quot;outline&quot;)[[[-&gt; 미안해 엄마. 내가 잘못했어-&gt;3084]]]
+(click: ?page)[==이번이 마지막이라는 확신이 들었다. 신중해야한다.</tw-passagedata><tw-passagedata pid="292" name="3083" tags="S#E.f.8 choice" position="1136,2575" size="100,100">(text-style:&quot;outline&quot;)[[[-&gt; 미안해 엄마. 내가 잘못했어-&gt;3084]]]
 (text-style:&quot;outline&quot;)[[[-&gt; 엄마는 날 이미 구원했어.-&gt;5000]]]</tw-passagedata><tw-passagedata pid="293" name="3084" tags="S#E.f.9" position="2009,2867" size="100,100">떨리는 목소리로 엄마에게 진심을 전한다.
 (click: ?page)[==&#39;&#39;나: &quot;엄마 그동안 힘들었던 거 몰라줘서 미안해 엄마... 내가 잘못했어..&quot;
 (click: ?page)[==나: &quot;나도 이제 다 알아. 엄마가 가난 때문에 힘들게 살아왔던 거..&quot;&#39;&#39;</tw-passagedata><tw-passagedata pid="294" name="3085" tags="S#E.f.9" position="2131,2867" size="100,100">&#39;&#39;나: &quot;엄마. 우리가 돈이 부족해서 그런거지?&quot;&#39;&#39;
@@ -1117,7 +1121,7 @@ glass: ./resource/glass.wav</tw-passagedata><tw-passagedata pid="115" name="1001
 (click: ?page)[==&#39;&#39;나: &quot;아니야!! 그 말이 아니야!!&quot;&#39;&#39;
 (click: ?page)[==방심했다. 엄마의 표정을 살피느라 손에 들고 있던 라이터를 까먹었다.</tw-passagedata><tw-passagedata pid="299" name="3089" tags="S#E.5" position="2246,2873" size="100,100">엄마의 몸에 붙은 불을 껴보려고 안간힘을 썼지만 불은 더 켜져갈 뿐이다.
 (click: ?page)[==&#39;&#39;나: &quot;엄마!! 엄마!! 돌아와..! 안돼!!&quot;&#39;&#39;
-(click: ?page)[==화염 속에 휩싸인 엄마가 들릴 듯 말 듯한 소리를 냈다.</tw-passagedata><tw-passagedata pid="300" name="3090" tags="S#E.5 choice" position="2366,2870" size="100,100">&#39;&#39;엄마: &quot;걱정마 지금의 육신은 버려지지만, 우리는 준비된 새로운 몸으로 승천하게 돼.&quot;&#39;&#39;
+(click: ?page)[==화염 속에 휩싸인 엄마가 들릴 듯 말 듯한 소리를 냈다.</tw-passagedata><tw-passagedata pid="300" name="3090" tags="S#E.5 choice" position="2366,2870" size="100,100">&#39;&#39;엄마: &quot;걱정 마. 지금의 육신은 버려지지만, 우리는 준비된 새로운 몸으로 승천하게 돼.&quot;&#39;&#39;
 (click: ?page)[==&#39;&#39;엄마: &quot;전부... 전부 다 잘 될거야...&quot;&#39;&#39;
 (click: ?page)[==엄마는, 우리는, 구원받은 걸까?
 (text-style:&quot;outline&quot;)[[REPLAY -&gt;3083]]</tw-passagedata><tw-passagedata pid="301" name="5001" tags="S#E.f.10" position="685,2817" size="100,100">그래서 엄마는 기도를 했고, 나는 돈을 벌었다.
@@ -1171,12 +1175,13 @@ glass: ./resource/glass.wav</tw-passagedata><tw-passagedata pid="115" name="1001
 (click: ?page)[==&#39;&#39;엄마: &quot;있잖아, 엄마가 어제 회사에서 만난 사람 딸내미는 올해...&quot;&#39;&#39;
 (click: ?page)[==결국 이야기의 끝은 엄친딸인건가...?</tw-passagedata><tw-passagedata pid="326" name="5026" tags="S#E.6.2" position="1278,3173" size="100,100">엄마는 한참을 그 엄친딸 얘기를 했다.
 (click: ?page)[==구름 위를 통통 떠다니는 듯한 목소리였다.
-(click: ?page)[==창문으로 햇빛 한 줄기가 들어와 거실을 밝히고 있었다.</tw-passagedata><tw-passagedata pid="327" name="5027" tags="S#E.6.2" position="1398,3173" size="100,100">우리집에는 더이상 언성 높인 말싸움도, 불길한 적막도 없다.
+(click: ?page)[==창문으로 햇빛 한 줄기가 들어와 거실을 밝히고 있었다.</tw-passagedata><tw-passagedata pid="327" name="5027" tags="S#E.6.2" position="1399,3173" size="100,100">우리집에는 더이상 언성 높인 말싸움도, 불길한 적막도 없다.
 (click: ?page)[==우리는 구원을 포기하면서 아이러니하게도 서로를 구원했다.
-(click: ?page)[==(text-style:&quot;shadow&quot;)[-The end-]</tw-passagedata><tw-passagedata pid="328" name="header" tags="header" position="917,186" size="100,100">&lt;input type=&quot;button&quot; value=&quot;  전체화면 활성화  &quot; 
+(click: ?page)[==(text-style:&quot;shadow&quot;)[[[The End -&gt;end]]]</tw-passagedata><tw-passagedata pid="328" name="header" tags="header" position="903,200" size="100,100">&lt;input type=&quot;button&quot; value=&quot;  전체화면 활성화  &quot; 
 onclick=&quot;makeitbig.myEventHandler();&quot;&gt;
 (if: (passage: )&#39;s name is &quot;title&quot;)[]
 (else-if: (passage: )&#39;s tags contains &quot;choice&quot;)[]
+(else-if: (passage: )&#39;s name is &quot;end&quot;)[]
 (else:)[
 (set: $pagename to (str:(passage:)&#39;s name))
 (set: $pagenumber to (num: $pagename))
@@ -1187,8 +1192,89 @@ onclick=&quot;makeitbig.myEventHandler();&quot;&gt;
 아무 곳이나 클릭(터치)하면 다음 텍스트가 등장합니다.]
 (click: ?page)[==(text-style:&quot;outline&quot;)[[[시작하기-&gt;0]]]
 ]
-(else-if: (passage: )&#39;s tags contains &quot;choice&quot; or (passage: )&#39;s name is &quot;20&quot;)[]
-(else: )[(click: ?page)[(goto:(str:$nextpage))]]]</tw-passagedata></tw-storydata>
+(else-if: (passage: )&#39;s tags contains &quot;choice&quot;)[]
+(else-if: (passage: )&#39;s name is &quot;20&quot;)[]
+(else-if: (passage: )&#39;s name is &quot;50000&quot;)[]
+(else-if: (passage: )&#39;s name is &quot;end&quot;)[]
+(else: )[(click: ?page)[(goto:(str:$nextpage))]]]</tw-passagedata><tw-passagedata pid="330" name="301" tags="S#E1" position="2314,3363" size="100,100">&#39;&#39;나 : &quot;엄마 미안해. 나 이번 발표는 꼭 가야 해. 달리 방법이 없어.&quot;&#39;&#39;
+(click: ?page)[==문 밖에서 흐느끼던 소리가 조금 잦아들었다. 엄마는 아무 말이 없었다.  
+(click: ?page)[==조금 간격을 두고 들리는 훌쩍임만이 엄마가 아직 문 앞에 있다는 것을 알려줬다. </tw-passagedata><tw-passagedata pid="331" name="302" tags="S#E1" position="2435,3362" size="100,100">&#39;&#39;나 : &quot;빚 갚는 거만 생각하자. 그럼 우리 새 출발 할 수 있어.&quot;&#39;&#39;
+(click: ?page)[==&#39;&#39;나 : &quot;다른 건 나중에라도 할 수 있잖아.&quot;  &#39;&#39;
+(click: ?page)[==...</tw-passagedata><tw-passagedata pid="332" name="303" tags="S#E1" position="2555,3362" size="100,100">여전히 엄마는 말이 없었다. 
+(click: ?page)[==잠시 후, 인기척이 문에서 멀어지는 듯 하더니 현관문이 열렸다 닫히는 소리가 들려왔다.
+(click: ?page)[==(text-style:&quot;buoy&quot;)[(track: &#39;door_squeak&#39;, &#39;play&#39;)(끼익)]</tw-passagedata><tw-passagedata pid="333" name="304" tags="S#E1" position="2674,3362" size="100,100">(text-style:&quot;italic&quot;,&quot;shudder&quot;)[(track: &#39;door_slam&#39;, &#39;play&#39;)(쾅)]
+(click: ?page)[==그렇게 말없이 엄마는 집을 나섰다. 
+(click: ?page)[==혼자 남은 집은 그 어느 때보다 고요했다. 집에 혼자 있는게 처음도 아닌데, 유달리 그 고요함이 낯설게만 느껴졌다. </tw-passagedata><tw-passagedata pid="334" name="305" tags="S#E1" position="2795,3363" size="100,100">긴장했던 내 심장소리만 선명하게 들렸다. 
+(click: ?page)[==&#39;&#39;나 : &quot;후... 정신 차리자!&quot;&#39;&#39;
+(click: ?page)[==감상에 잠길 시간이 없다. 지금은 공모전이 우선이다. 일단은 눈 앞의 일에 집중하자.</tw-passagedata><tw-passagedata pid="335" name="306" tags="S#E1.2" position="2206,3484" size="100,100">성공적으로 발표를 마쳤다. 이상하게 긴장이 하나도 되지 않았다. 준비해간 내용을 화려한 쇼맨십과 함께 모두 전달했다. 
+(click: ?page)[==신이 도왔는지 호평뿐이었고, 결국 나는 대상을 수상했다. 
+(click: ?page)[==&#39;&#39;나 : &quot;정말... 정말 다행이다... 이걸로 구멍난 건 충분히 메꿀 수 있겠다!&quot;&#39;&#39;</tw-passagedata><tw-passagedata pid="336" name="307" tags="S#E1.2" position="2329,3484" size="100,100">상금은 빠른 시일 내로 지급된다고 한다. 
+(click: ?page)[==되는 대로 밀린 빚을 먼저 갚고, 남은 건 이번 달치 상환에 보태면 될 것이다. 
+(click: ?page)[==&#39;&#39;나 : &quot;일단은 이 좋은 소식을 엄마한테 전하고, 채권자한테도 돈 준비될 거라 연락을...&quot;&#39;&#39;</tw-passagedata><tw-passagedata pid="337" name="308" tags="S#E1.3" position="2209,3598" size="100,100">(text-style:&quot;shudder&quot;)[(track: &#39;call_ringing&#39;, &#39;play&#39;)(따르르르릉)]
+(click: ?page)[==핸드폰을 꺼내 엄마에게 전화하려던 순간, 모르는 번호로부터 전화가 왔다. 채권자는 아니었다. 
+(click: ?page)[==왜인지는 모르겠지만, 순간 엄마가 집을 나선 후 느꼈던 고요함이 떠올랐다.</tw-passagedata><tw-passagedata pid="338" name="309" tags="S#E1.3" position="2329,3598" size="100,100">그 낯설던 적막. 그에 비해 길거리는 소음들로 가득했다. 
+(click: ?page)[==분주한 사람들의 발소리, 줄지어 선 자동차들의 엔진소리, 세차게 부는 바람소리. 
+(click: ?page)[==하지만 그 소음들 사이에서도 지금 울리는 이 전화벨 소리만이 선명하게 들려왔다.</tw-passagedata><tw-passagedata pid="339" name="310" tags="S#E1.3" position="2449,3598" size="100,100">(철컥) 
+&#39;&#39;나 : &quot;여보세요?&quot; 
+(click: ?page)[==경찰: &quot;여보세요? 혹시 이신애씨 따님 맞나요?&quot;
+(click: ?page)[==나 : &quot;네 맞습니다. 누구세요?&quot;&#39;&#39;</tw-passagedata><tw-passagedata pid="340" name="311" tags="S#E1.3" position="2569,3598" size="100,100">&#39;&#39;경찰 : &quot;여기 서울 00경찰서입니다.&quot;
+(click: ?page)[==경찰 : &quot;그... 놀라지 말고 들으세요. 이신애씨, 그러니까 어머니께서...&quot; &#39;&#39;
+(click: ?page)[==갑자기 모든 소음이 멎었다. 고요했다.</tw-passagedata><tw-passagedata pid="341" name="312" tags="S#E1.3" position="2691,3599" size="100,100">귀가 먹먹해지고, 핸드폰에서는 알 수 없는 말들이 쏟아져나왔다. 
+(click: ?page)[==//&#39;&#39;&quot;(text-style:&quot;blur&quot;)[교회가] 불타서... ... 집단자살... ... 의식을 (text-style:&quot;blur&quot;)[한] 걸로... ...&#39;&#39;//
+(click: ?page)[==//&#39;&#39;구급대원들이... ...(text-style:&quot;blur&quot;)[ 다했지만]... ... 너무 늦었... ... (text-style:&quot;blurrier&quot;)[여보세요...? ...] ... (text-style:&quot;blur&quot;)[여]... (text-style:&quot;blurrier&quot;)[세... ?&quot;]//&#39;&#39;</tw-passagedata><tw-passagedata pid="342" name="313" tags="S#E1.3" position="2809,3598" size="100,100">무슨 얘기지...? 잘 안 들려... 뭐라는 거야... 
+(click: ?page)[==엄마...
+(click: ?page)[==엄마가 어떻게 됐다고...?</tw-passagedata><tw-passagedata pid="343" name="314" tags="S#E1.4" position="2213,3726" size="100,100">(text-style:&quot;blur&quot;)[&#39;&#39;경찰 : &quot;여보세요? 제 말 들리세요?&quot; &#39;&#39;]
+(click: ?page)[==어느새 핸드폰은 발치에 떨어져있었다. 핸드폰 너머의 목소리가 들릴듯 말듯 했다.</tw-passagedata><tw-passagedata pid="344" name="315" tags="S#E1.4" position="2333,3726" size="100,100">어디서부터 잘못된 걸까? 오늘 따라가지 않은 거? 헌금때문에 싸운 거? 엄마가 종교에 빠진 거? 아니면 우리 집이 가난한 거? 아빠가 일찍 돌아가신 거? 
+(click: ?page)[==기억 속을 더듬어봤지만 갈피를 잡을 수 없었다. 시간은 이미 흘렀고, 과거와는 대화를 할 수 없다.</tw-passagedata><tw-passagedata pid="345" name="316" tags="S#E1.4 choice" position="2453,3726" size="100,100">... ...
+(click: ?page)[==고요하다. 
+(click: ?page)[==내려앉은 마음의 빈 자리에 낯선 적막이 흐른다.
+(click: ?page)[==(text-style:&quot;shadow&quot;)[[[The End -&gt;end]]]</tw-passagedata><tw-passagedata pid="346" name="end" tags="choice" position="2454,3876" size="100,100">(align:&quot;=&gt;&lt;=&quot;)[-credits-
+
+시나리오: 박가영, 이세호
+아트: 이시은, 고주환
+개발: 배정은, 이지현]</tw-passagedata><tw-passagedata pid="347" name="501" tags="S#A10" position="1532,3437.5" size="100,100">&#39;&#39;엄마 : &quot;저... 정말? 정말 같이 가는거야?&quot;
+(click: ?page)[==나 : &quot;응. 엄마 소원 들어줄게. 지금 바로 가면 돼?&quot; 
+(click: ?page)[==엄마 : &quot;그래! 아, 아니 아니. 잠깐만 잠깐만! 엄마 준비좀 할게!&quot;&#39;&#39;</tw-passagedata><tw-passagedata pid="348" name="502" tags="S#A10" position="1653,3437.5" size="100,100">엄마가 굉장히 분주하게 움직이고 있다는 건, 굳이 눈으로 보지 않아도 알 수 있었다. 
+(click: ?page)[==저렇게 좋아할 줄 알았으면 좀 더 일찍 못 이기는 척 한 번 가볼걸 그랬나... 
+(click: ?page)[==하지만 여전히 그 &#39;행사&#39;에 대해서는 의구심이 들었다. 대체 무슨 행사일까?</tw-passagedata><tw-passagedata pid="349" name="503" tags="S#A10" position="1772,3437.5" size="100,100">&#39;&#39;엄마 : &quot;엄마 준비 다 했어! 이제 가자!&quot;&#39;&#39;
+(click: ?page)[==그래. 직접 가서 확인하면 될 일이다. 정신 바짝 차리자.</tw-passagedata><tw-passagedata pid="350" name="504" tags="S#A11" position="1418,3549.5" size="100,100">&#39;&#39;나 : &quot;교회가 꽤 머네...&quot;
+(click: ?page)[==엄마 : &quot;반도 안 왔는데 무슨 소리야 얘는! 아직 좀 더 가야 해~&quot; &#39;&#39;
+(click: ?page)[==동네에 있는 교회인 줄 알았는데, 버스를 탄 지 20분이 넘었는데도 반 이상 남았다니!</tw-passagedata><tw-passagedata pid="351" name="505" tags="S#A11" position="1534,3551.5" size="100,100">생각해보면 엄마의 종교를 그렇게나 싫어했던 것 치고는, 제대로 알아볼 생각조차 하지 않았던 것 같다.
+(click: ?page)[==&#39;&#39;나 : &quot;으음... 피곤하네.&quot;&#39;&#39;
+(click: ?page)[==어제 찜질방에서 잘 못 잔 건지 피로가 몰려왔다. 게다가 아침 알바까지 했으니 피곤할 만도 하다.</tw-passagedata><tw-passagedata pid="352" name="506" tags="S#A11" position="1654,3550.5" size="100,100">&#39;&#39;엄마 : &quot;도착하려면 좀 남았으니까 피곤하면 자. 도착하면 엄마가 깨워줄게.&quot;
+(click: ?page)[==나 : &quot;응, 알았...어...&quot;&#39;&#39;
+(click: ?page)[==말이 끝나기가 무섭게 눈꺼풀이 무거워졌다.</tw-passagedata><tw-passagedata pid="353" name="507" tags="S#A11" position="1774,3551.5" size="100,100">그리고 이제는 제법 익숙한, 의식이 희미해지는 느낌이 들었다. </tw-passagedata><tw-passagedata pid="354" name="508" tags="S#A12" position="1414,3667.5" size="100,100">//(text-colour:grey)[아, 이건 꿈이다.]//
+(click: ?page)[==마치 현실처럼 생생한 기분. 나오지 않는 목소리. 이제는 알겠다. 이게 꿈이라는 걸. 
+(click: ?page)[==//(text-colour:grey)[이 집은 내가 중학교 때 살았던 집인데...]//</tw-passagedata><tw-passagedata pid="355" name="509" tags="S#A12" position="1534,3667.5" size="100,100">살면서 힘들지 않았던 적이 있었겠느냐만, 이 시절은 특히나 더 힘들었다. 
+(click: ?page)[==아빠가 남긴 빚을 갚아나가는 게 점점 감당키 어려워지던 시기였다. 
+(click: ?page)[==결국 전세금과 보증금을 땡겨 쓰면서, 이 집 저 집 옮겨다니기 시작했다.</tw-passagedata><tw-passagedata pid="356" name="510" tags="S#A12" position="1653,3667.5" size="100,100">이삿짐을 다 풀기도 전에 다시 이사간 적이 있을 정도였다. 
+(click: ?page)[==&#39;&#39;엄마 : &quot;아가씨... 잠깐이면 돼. 정말 잠깐만 있다가 금방 다른 집 구해서 나갈... 여보세요? 여보세요??&quot;&#39;&#39;
+(click: ?page)[==(text-style:&quot;sway&quot;)[(track: &#39;call-end&#39;, &#39;play&#39;)(뚜뚜뚜뚜)]</tw-passagedata><tw-passagedata pid="357" name="511" tags="S#A12" position="1774,3667.5" size="100,100">친척들에게 연락하는 건가. 내 앞에서는 친척들과 통화하는 모습을 보여준 적이 없었다. 
+(click: ?page)[==엄마는 잠시 고개를 숙이더니, 이내 다시 핸드폰을 들고 번호를 눌렀다. 
+(click: ?page)[==&#39;&#39;엄마 : &quot;여보세요? 동서 나야~. 잘 지냈...&quot;&#39;&#39;</tw-passagedata><tw-passagedata pid="358" name="512" tags="S#A12" position="1895,3667.5" size="100,100">(track: &#39;call-end&#39;, &#39;play&#39;)(text-style:&quot;sway&quot;)[(뚜뚜뚜뚜)]
+&#39;&#39;엄마 : &quot;... 끊었네.&quot; &#39;&#39;
+(click: ?page)[==엄마는 한숨을 내쉬며 다시 고개를 숙였다. 
+(click: ?page)[==엄마에게는 이렇다 할 친척이 없다. 그래서 부득이하게 친가 쪽 친척들에게 연락을 취한 것 같은데, 보아하니 잘 안 풀린 모양이다.</tw-passagedata><tw-passagedata pid="359" name="513" tags="S#A12" position="1525,3787.5" size="100,100">//(text-colour:grey)[엄마... 외로웠겠네...]//
+(click: ?page)[==고개 숙인 엄마의 시선이 옆에 있는 종교 전단지로 향했다. 
+(click: ?page)[==엄마는 전단지를 집어들더니, 그걸 한참동안 바라보았다.</tw-passagedata><tw-passagedata pid="360" name="514" tags="S#A12" position="1645,3787.5" size="100,100">(text-colour:grey)[//맞아. 이 즈음부터 엄마가 교회를 나가기 시작했지.//]
+(click: ?page)[==가슴 한 켠이 저려왔다. 엄마는 심적으로 고립되어 있었고, 의지할 곳 없는 엄마에게 다가온 건 종교였다. 
+(click: ?page)[==엄마는 점차 그 종교에 빠져들었고, 그로부터 지금의 상황에 이르게 된 것이다.</tw-passagedata><tw-passagedata pid="361" name="515" tags="S#A12" position="1765,3787.5" size="100,100">후회가 밀려왔다. 이 때 내가 엄마의 상황을 알았다면, 막을 수도 있지 않았을까? 
+(click: ?page)[==왜 하필 지금, 그것도 꿈을 통해서 알게된걸까? 
+(click: ?page)[==... 이제와서 후회해도 소용없다. 어차피 엎질러진 물이다. 그보다는 지금에 집중해야한다.</tw-passagedata><tw-passagedata pid="362" name="516" tags="S#A12" position="1885,3787.5" size="100,100">그래서 지금 나는... 나는... 
+(click: ?page)[==(text-colour:grey)[//나는... 뭘 하고 있었지?//]
+(click: ?page)[==(text-colour:grey)[//엄마가 울고... 행사가 있다 하고...  결국 따라갔지...//]</tw-passagedata><tw-passagedata pid="363" name="517" tags="S#A12 choice" position="2005,3788.5" size="100,100">//(text-colour:grey)[그런데 나는 왜 엄마를 따라가고 있는 거지?]//
+(text-style:&quot;outline&quot;)[[[-&gt; 엄마를 종교에서 구출하기 위해-&gt;save]]]
+(text-style:&quot;outline&quot;)[[[-&gt; 엄마를 더 잘 이해하고 싶어서-&gt;understrand]]]</tw-passagedata><tw-passagedata pid="364" name="save" tags="S#A12 choice" position="1930,3941.5" size="100,100">(set: $branch to (datamap:&quot;e3&quot;, false))
+(float-box: &quot;=XXX=&quot;,&quot;====Y=&quot;)+(bg:white)+(b4r:&quot;solid&quot;)+(b4r-colour:black)[&#39;&#39;그래, 난 엄마를 구출하고 싶었던거야. 
+(click: ?page)[==그 지긋지긋한 종교로부터. 
+(click: ?page)[==오늘은 무슨 수를 써서라도 엄마를 데리고 나와야겠어.&#39;&#39;
+(click: ?page)[(goto: &quot;518&quot;)]]</tw-passagedata><tw-passagedata pid="365" name="understrand" tags="S#A12 choice" position="2081,3938.5" size="100,100">(set: $branch to (datamap:&quot;e3&quot;, true))
+(float-box: &quot;=XXX=&quot;,&quot;====Y=&quot;)+(bg:white)+(b4r:&quot;solid&quot;)+(b4r-colour:black)[&#39;&#39;그 시절 엄마는 홀로 외롭게 지냈다. 
+(click: ?page)[==그런 엄마를, 이 종교는 위로해줬던 걸까? 엄마에게 이 사이비는 대체 어떤 의미인걸까? 
+(click: ?page)[==어쩌면 태어나서 처음으로 엄마를 이해해보고 싶어진 걸지도 모른다.&#39;&#39;
+(click: ?page)[(goto: &quot;518&quot;)]]</tw-passagedata><tw-passagedata pid="366" name="518" tags="S#A13" position="1515,3941.5" size="100,100">엄마 : &quot;... 도착했어... 일어나...&quot;
+(click: ?page)[==엄마 : &quot;딸! 다 왔어. 이제 내려야 해!&quot;
+(click: ?page)[==엄마의 재촉하는 소리에 눈이 떠졌다. 이번에도 역시 꿈 내용은 전부 기억났다.</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">"use strict";var _slicedToArray=function(){return function(e,t){if(Array.isArray(e))return e;if(Symbol.iterator in Object(e))return function(e,t){var n=[],r=!0,a=!1,i=void 0;try{for(var o,s=e[Symbol.iterator]();!(r=(o=s.next()).done)&&(n.push(o.value),!t||n.length!==t);r=!0);}catch(e){a=!0,i=e}finally{try{!r&&s.return&&s.return()}finally{if(a)throw i}}return n}(e,t);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}!function(){
 /**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
